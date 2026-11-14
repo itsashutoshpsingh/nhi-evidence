@@ -1,0 +1,83 @@
+{
+ "steps": 42,
+ "requests": 42,
+ "methods": [
+  "GET",
+  "PATCH",
+  "POST"
+ ],
+ "findings": [
+  {
+   "check_id": "C01",
+   "rule": "only_disabled_or_nonhuman_owners",
+   "object": "nhi-lab-reporting-export",
+   "severity": "medium"
+  },
+  {
+   "check_id": "C03",
+   "rule": "lifetime_over_limit",
+   "object": "nhi-lab-legacy-crm-connector",
+   "severity": "low"
+  },
+  {
+   "check_id": "C04",
+   "rule": "expired_present",
+   "object": "nhi-lab-old-billing-api",
+   "severity": "low"
+  },
+  {
+   "check_id": "C05",
+   "rule": "secret_only",
+   "object": "nhi-lab-nightly-report-job",
+   "severity": "medium"
+  },
+  {
+   "check_id": "C06",
+   "rule": "data_graph_permission",
+   "object": "nhi-lab-doc-archiver",
+   "severity": "high"
+  },
+  {
+   "check_id": "C06",
+   "rule": "data_graph_permission",
+   "object": "nhi-lab-sharepoint-migrator",
+   "severity": "high"
+  },
+  {
+   "check_id": "C07",
+   "rule": "all_principals_sensitive_scope",
+   "object": "nhi-lab-mailmerge",
+   "severity": "high"
+  },
+  {
+   "check_id": "C08",
+   "rule": "privileged_directory_role",
+   "object": "nhi-lab-identity-automation",
+   "severity": "high"
+  },
+  {
+   "check_id": "C09",
+   "rule": "github_pull_request",
+   "object": "nhi-lab-infra-deployer",
+   "severity": "medium"
+  },
+  {
+   "check_id": "C11",
+   "rule": "prod_and_nonprod",
+   "object": "nhi-lab-orders-api-ci",
+   "severity": "medium"
+  },
+  {
+   "check_id": "C12",
+   "rule": "not_in_enforced_policy",
+   "object": "nhi-lab-payroll-export",
+   "severity": "low"
+  },
+  {
+   "check_id": "C13",
+   "rule": "path_from_non_privileged",
+   "object": "nhi-lab-sharepoint-migrator",
+   "severity": "critical"
+  }
+ ]
+}

@@ -172,16 +172,16 @@ def build(on: set[str], include_activity: bool = True) -> Tenant:
     return t
 
 
-ALLOWLIST = [{"appId": None, "checks": ["C06", "C10"],
-              "reason": "Approved vendor backup service: security review SR-2291, re-review due 2027-01"}]
+def allowlist(t: Tenant) -> list[dict]:
+    return [{"appId": t.by_name["BackupVault Cloud"]["appId"], "checks": ["C06", "C10"],
+             "reason": "Approved vendor backup service: security review SR-2291, re-review due 2027-01"}]
 
 
 def write(out: Path) -> None:
     for name, on in (("clean_tenant", set()), ("seeded_tenant", ALL)):
         t = build(on)
         t.snapshot().save(out / name)
-        allow = [dict(ALLOWLIST[0], appId=t.by_name["BackupVault Cloud"]["appId"])]
-        (out / name / "allowlist.json").write_text(json.dumps(allow, indent=1) + "\n")
+        (out / name / "allowlist.json").write_text(json.dumps(allowlist(t), indent=1) + "\n")
         exp = [{"issue": k, "check_id": c, "rule": r, "object": obj, "description": desc,
                 "object_id": (t.by_name.get(f"app:{obj}") if c in ("C01", "C03", "C04", "C05", "C09", "C11")
                               else t.by_name[obj])["id"]}

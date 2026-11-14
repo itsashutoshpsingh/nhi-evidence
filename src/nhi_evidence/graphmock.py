@@ -14,8 +14,9 @@ from .snapshot import Snapshot
 
 
 class MockGraph:
-    def __init__(self, snap: Snapshot, throttle_every: int = 0):
+    def __init__(self, snap: Snapshot, throttle_every: int = 0, max_page: int = 999):
         self.snap = snap
+        self.max_page = max_page
         self.throttle_every = throttle_every
         self.requests = 0
         self.writes = []
@@ -72,7 +73,7 @@ class MockGraph:
         rows = self._collection("/" + path, query)
         if rows is None:
             return httpx.Response(404, json={"error": {"code": "Request_ResourceNotFound"}})
-        top = min(int(query.get("$top", ["100"])[0]), 999)
+        top = min(int(query.get("$top", ["100"])[0]), 999, self.max_page)
         skip = int(query.get("$skiptoken", ["0"])[0])
         page = rows[skip:skip + top]
         if "$select" in query:

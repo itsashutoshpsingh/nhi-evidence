@@ -40,6 +40,7 @@ class Tenant:
             {"id": tid, "templateId": tid, "displayName": r["displayName"], "isBuiltIn": True, "isEnabled": True,
              "isPrivileged": r["privileged"]} for tid, r in sorted(refs.roles().items())]
         self.d["servicePrincipalSignInActivities"] = [] if include_activity else None
+        self._acts = {} if include_activity else None  # appId -> record; listed in snapshot()
         self.d["signIns"] = [] if include_activity else None
         self.by_name = {}
         self.graph = self.first_party("Microsoft Graph", refs.MS_GRAPH_APP_ID, graph_roles=True)
@@ -202,20 +203,19 @@ class Tenant:
                  "principalId": None, "resourceId": self.graph["id"], "scope": all_consent})
         for r in roles:
             self.role(sp, r)
-        if last_sign_in is not None and self.d["servicePrincipalSignInActivities"] is not None and sp.get("appId"):
+        if last_sign_in is not None and self._acts is not None and sp.get("appId"):
             self.sign_in_activity(sp, last_sign_in)
 
     def sign_in_activity(self, sp: dict, days_ago: float | None) -> None:
-        acts = self.d["servicePrincipalSignInActivities"]
-        acts[:] = [a for a in acts if a["appId"] != sp["appId"]]
+        self._acts.pop(sp["appId"], None)
         if days_ago is None:
             return
         act = {"lastSignInDateTime": self.ago(days_ago), "lastSignInRequestId": self.uid("req", sp["id"])}
         empty = {"lastSignInDateTime": None, "lastSignInRequestId": None}
-        acts.append({"id": self.opaque("spsia", sp["appId"]), "appId": sp["appId"], "lastSignInActivity": act,
-                     "applicationAuthenticationClientSignInActivity": act,
-                     "applicationAuthenticationResourceSignInActivity": empty,
-                     "delegatedClientSignInActivity": empty, "delegatedResourceSignInActivity": empty})
+        self._acts[sp["appId"]] = {
+            "id": self.opaque("spsia", sp["appId"]), "appId": sp["appId"], "lastSignInActivity": act,
+            "applicationAuthenticationClientSignInActivity": act, "applicationAuthenticationResourceSignInActivity": empty,
+            "delegatedClientSignInActivity": empty, "delegatedResourceSignInActivity": empty}
 
     def ca_policy(self, name: str, include=("ServicePrincipalsInMyTenant",), exclude=(), state="enabled") -> dict:
         p = {"id": self.uid("ca", name), "displayName": name, "state": state, "createdDateTime": self.ago(300),
@@ -245,6 +245,8 @@ class Tenant:
             "riskEventTypes_v2": [], "appliedConditionalAccessPolicies": []})
 
     def snapshot(self, source: str = "synthetic fixture") -> Snapshot:
+        if self._acts is not None:
+            self.d["servicePrincipalSignInActivities"] = list(self._acts.values())
         manifest = {"collected_at": iso(self.now), "source": source, "tenant": "synthetic, not a real tenant",
                     "api_versions": {"servicePrincipalSignInActivities": "beta", "federatedIdentityCredentials": "beta",
                                      "default": "v1.0"}}

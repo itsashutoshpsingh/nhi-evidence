@@ -1,0 +1,92 @@
+tenant,check,true,naive_found,naive_false,naive_missed,refined_false,refined_missed,refinement
+seeded fixture,C01,1,0,5,1,0,0,disabled and non-human owners do not count; serviceManagementReference counts
+seeded fixture,C02,1,1,9,0,0,0,"grace period for new apps; skip managed identities, first-party and identities with no access"
+seeded fixture,C03,1,1,1,0,0,0,service principal secrets too; expired secrets left to C04
+seeded fixture,C04,1,1,0,0,0,0,count only active secrets as duplicates; include service principal objects
+seeded fixture,C05,1,1,9,0,0,0,only app-only identities; federation counts as an alternative
+seeded fixture,C06,2,1,0,1,0,0,"named permission list (read-only Mail/Files count, ReadWrite names that are not tenant-wide do not)"
+seeded fixture,C07,1,1,2,0,0,0,only sensitive scopes on Microsoft Graph; allowlist first-party
+seeded fixture,C08,1,1,1,0,0,0,only roles Microsoft labels privileged
+seeded fixture,C09,1,1,0,0,0,0,"flexible expressions, issuers, Kubernetes default account, spellings that never match"
+seeded fixture,C10,1,1,7,0,0,0,only unverified apps that hold access; allowlist first-party
+seeded fixture,C12,1,1,2,0,0,0,"enforced policies only; skip managed identities, multi-tenant and disabled apps"
+seeded fixture,C13,1,1,0,0,0,0,"graph of owners, roles, groups and app permissions; disabled and admin principals are not sources"
+seeded fixture,C14,1,1,0,0,0,0,successful interactive sign-ins only
+clean fixture,C01,0,0,6,0,0,0,disabled and non-human owners do not count; serviceManagementReference counts
+clean fixture,C02,0,0,9,0,0,0,"grace period for new apps; skip managed identities, first-party and identities with no access"
+clean fixture,C03,0,0,0,0,0,0,service principal secrets too; expired secrets left to C04
+clean fixture,C04,0,0,0,0,0,0,count only active secrets as duplicates; include service principal objects
+clean fixture,C05,0,0,9,0,0,0,only app-only identities; federation counts as an alternative
+clean fixture,C06,0,0,0,0,0,0,"named permission list (read-only Mail/Files count, ReadWrite names that are not tenant-wide do not)"
+clean fixture,C07,0,0,3,0,0,0,only sensitive scopes on Microsoft Graph; allowlist first-party
+clean fixture,C08,0,0,2,0,0,0,only roles Microsoft labels privileged
+clean fixture,C09,0,0,0,0,0,0,"flexible expressions, issuers, Kubernetes default account, spellings that never match"
+clean fixture,C10,0,0,7,0,0,0,only unverified apps that hold access; allowlist first-party
+clean fixture,C12,0,0,2,0,0,0,"enforced policies only; skip managed identities, multi-tenant and disabled apps"
+clean fixture,C13,0,0,0,0,0,0,"graph of owners, roles, groups and app permissions; disabled and admin principals are not sources"
+clean fixture,C14,0,0,1,0,0,0,successful interactive sign-ins only
+synthetic 1000 seed 1,C01,16,1,107,15,0,0,disabled and non-human owners do not count; serviceManagementReference counts
+synthetic 1000 seed 1,C02,12,12,189,0,0,0,"grace period for new apps; skip managed identities, first-party and identities with no access"
+synthetic 1000 seed 1,C03,12,6,0,6,0,0,service principal secrets too; expired secrets left to C04
+synthetic 1000 seed 1,C04,8,8,0,0,0,0,count only active secrets as duplicates; include service principal objects
+synthetic 1000 seed 1,C05,12,12,156,0,0,0,only app-only identities; federation counts as an alternative
+synthetic 1000 seed 1,C06,24,16,0,8,0,0,"named permission list (read-only Mail/Files count, ReadWrite names that are not tenant-wide do not)"
+synthetic 1000 seed 1,C07,3,3,127,0,0,0,only sensitive scopes on Microsoft Graph; allowlist first-party
+synthetic 1000 seed 1,C08,12,12,58,0,0,0,only roles Microsoft labels privileged
+synthetic 1000 seed 1,C09,12,3,0,9,0,0,"flexible expressions, issuers, Kubernetes default account, spellings that never match"
+synthetic 1000 seed 1,C10,3,3,193,0,0,0,only unverified apps that hold access; allowlist first-party
+synthetic 1000 seed 1,C12,12,12,8,0,0,0,"enforced policies only; skip managed identities, multi-tenant and disabled apps"
+synthetic 1000 seed 1,C13,12,7,46,5,0,0,"graph of owners, roles, groups and app permissions; disabled and admin principals are not sources"
+synthetic 1000 seed 1,C14,4,4,16,0,0,0,successful interactive sign-ins only
+synthetic 1000 seed 2,C01,16,6,109,10,0,0,disabled and non-human owners do not count; serviceManagementReference counts
+synthetic 1000 seed 2,C02,12,12,189,0,0,0,"grace period for new apps; skip managed identities, first-party and identities with no access"
+synthetic 1000 seed 2,C03,12,6,0,6,0,0,service principal secrets too; expired secrets left to C04
+synthetic 1000 seed 2,C04,11,11,0,0,0,0,count only active secrets as duplicates; include service principal objects
+synthetic 1000 seed 2,C05,12,12,142,0,0,0,only app-only identities; federation counts as an alternative
+synthetic 1000 seed 2,C06,24,16,0,8,0,0,"named permission list (read-only Mail/Files count, ReadWrite names that are not tenant-wide do not)"
+synthetic 1000 seed 2,C07,3,3,116,0,0,0,only sensitive scopes on Microsoft Graph; allowlist first-party
+synthetic 1000 seed 2,C08,12,12,46,0,0,0,only roles Microsoft labels privileged
+synthetic 1000 seed 2,C09,12,3,0,9,0,0,"flexible expressions, issuers, Kubernetes default account, spellings that never match"
+synthetic 1000 seed 2,C10,3,3,198,0,0,0,only unverified apps that hold access; allowlist first-party
+synthetic 1000 seed 2,C12,12,10,8,2,0,0,"enforced policies only; skip managed identities, multi-tenant and disabled apps"
+synthetic 1000 seed 2,C13,12,3,53,9,0,0,"graph of owners, roles, groups and app permissions; disabled and admin principals are not sources"
+synthetic 1000 seed 2,C14,4,4,16,0,0,0,successful interactive sign-ins only
+synthetic 1000 seed 3,C01,16,1,112,15,0,0,disabled and non-human owners do not count; serviceManagementReference counts
+synthetic 1000 seed 3,C02,12,12,185,0,0,0,"grace period for new apps; skip managed identities, first-party and identities with no access"
+synthetic 1000 seed 3,C03,12,9,0,3,0,0,service principal secrets too; expired secrets left to C04
+synthetic 1000 seed 3,C04,10,10,0,0,0,0,count only active secrets as duplicates; include service principal objects
+synthetic 1000 seed 3,C05,12,12,136,0,0,0,only app-only identities; federation counts as an alternative
+synthetic 1000 seed 3,C06,24,14,0,10,0,0,"named permission list (read-only Mail/Files count, ReadWrite names that are not tenant-wide do not)"
+synthetic 1000 seed 3,C07,3,3,119,0,0,0,only sensitive scopes on Microsoft Graph; allowlist first-party
+synthetic 1000 seed 3,C08,12,12,44,0,0,0,only roles Microsoft labels privileged
+synthetic 1000 seed 3,C09,12,3,0,9,0,0,"flexible expressions, issuers, Kubernetes default account, spellings that never match"
+synthetic 1000 seed 3,C10,3,3,183,0,0,0,only unverified apps that hold access; allowlist first-party
+synthetic 1000 seed 3,C12,12,10,8,2,0,0,"enforced policies only; skip managed identities, multi-tenant and disabled apps"
+synthetic 1000 seed 3,C13,12,3,55,9,0,0,"graph of owners, roles, groups and app permissions; disabled and admin principals are not sources"
+synthetic 1000 seed 3,C14,4,4,16,0,0,0,successful interactive sign-ins only
+synthetic 1000 seed 4,C01,16,3,110,13,0,0,disabled and non-human owners do not count; serviceManagementReference counts
+synthetic 1000 seed 4,C02,12,12,185,0,0,0,"grace period for new apps; skip managed identities, first-party and identities with no access"
+synthetic 1000 seed 4,C03,12,9,0,3,0,0,service principal secrets too; expired secrets left to C04
+synthetic 1000 seed 4,C04,9,9,0,0,0,0,count only active secrets as duplicates; include service principal objects
+synthetic 1000 seed 4,C05,12,12,152,0,0,0,only app-only identities; federation counts as an alternative
+synthetic 1000 seed 4,C06,24,16,0,8,0,0,"named permission list (read-only Mail/Files count, ReadWrite names that are not tenant-wide do not)"
+synthetic 1000 seed 4,C07,3,3,110,0,0,0,only sensitive scopes on Microsoft Graph; allowlist first-party
+synthetic 1000 seed 4,C08,12,12,48,0,0,0,only roles Microsoft labels privileged
+synthetic 1000 seed 4,C09,12,7,0,5,0,0,"flexible expressions, issuers, Kubernetes default account, spellings that never match"
+synthetic 1000 seed 4,C10,3,3,197,0,0,0,only unverified apps that hold access; allowlist first-party
+synthetic 1000 seed 4,C12,12,8,8,4,0,0,"enforced policies only; skip managed identities, multi-tenant and disabled apps"
+synthetic 1000 seed 4,C13,12,4,37,8,0,0,"graph of owners, roles, groups and app permissions; disabled and admin principals are not sources"
+synthetic 1000 seed 4,C14,4,4,16,0,0,0,successful interactive sign-ins only
+synthetic 1000 seed 5,C01,16,3,114,13,0,0,disabled and non-human owners do not count; serviceManagementReference counts
+synthetic 1000 seed 5,C02,12,12,189,0,0,0,"grace period for new apps; skip managed identities, first-party and identities with no access"
+synthetic 1000 seed 5,C03,12,8,0,4,0,0,service principal secrets too; expired secrets left to C04
+synthetic 1000 seed 5,C04,6,6,0,0,0,0,count only active secrets as duplicates; include service principal objects
+synthetic 1000 seed 5,C05,12,12,148,0,0,0,only app-only identities; federation counts as an alternative
+synthetic 1000 seed 5,C06,24,15,0,9,0,0,"named permission list (read-only Mail/Files count, ReadWrite names that are not tenant-wide do not)"
+synthetic 1000 seed 5,C07,3,3,105,0,0,0,only sensitive scopes on Microsoft Graph; allowlist first-party
+synthetic 1000 seed 5,C08,12,12,44,0,0,0,only roles Microsoft labels privileged
+synthetic 1000 seed 5,C09,12,7,0,5,0,0,"flexible expressions, issuers, Kubernetes default account, spellings that never match"
+synthetic 1000 seed 5,C10,3,3,183,0,0,0,only unverified apps that hold access; allowlist first-party
+synthetic 1000 seed 5,C12,12,10,8,2,0,0,"enforced policies only; skip managed identities, multi-tenant and disabled apps"
+synthetic 1000 seed 5,C13,12,5,60,7,0,0,"graph of owners, roles, groups and app permissions; disabled and admin principals are not sources"
+synthetic 1000 seed 5,C14,4,4,16,0,0,0,successful interactive sign-ins only

@@ -45,12 +45,12 @@ class Graph:
     def get(self, url: str, extra_headers: dict | None = None) -> dict:
         for attempt in range(self.max_retries + 1):
             r = self.client.request("GET", url, headers=self.headers | (extra_headers or {}))
-            self.calls[endpoint(url)] += 1
             if r.status_code in RETRY and attempt < self.max_retries:
                 self.throttled += 1
                 wait = r.headers.get("Retry-After")
                 self.sleep(float(wait) if wait and wait.replace(".", "", 1).isdigit() else min(2 ** attempt, 60))
                 continue
+            self.calls[endpoint(url)] += 1
             r.raise_for_status()
             return r.json()
         raise RuntimeError("unreachable")

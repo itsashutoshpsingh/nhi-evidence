@@ -1,0 +1,42 @@
+{
+ "NHI1": {
+  "name": "Improper Offboarding",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/1-improper-offboarding/"
+ },
+ "NHI10": {
+  "name": "Human Use of NHI",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/10-human-use-of-nhi/"
+ },
+ "NHI2": {
+  "name": "Secret Leakage",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/2-secret-leakage/"
+ },
+ "NHI3": {
+  "name": "Vulnerable Third-Party NHI",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/3-vulnerable-third-party-nhi/"
+ },
+ "NHI4": {
+  "name": "Insecure Authentication",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/4-insecure-authentication/"
+ },
+ "NHI5": {
+  "name": "Overprivileged NHI",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/5-overprivileged-nhi/"
+ },
+ "NHI6": {
+  "name": "Insecure Cloud Deployment Configurations",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/6-insecure-cloud-deployment-configurations/"
+ },
+ "NHI7": {
+  "name": "Long-Lived Secrets",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/7-long-lived-secrets/"
+ },
+ "NHI8": {
+  "name": "Environment Isolation",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/8-environment-isolation/"
+ },
+ "NHI9": {
+  "name": "NHI Reuse",
+  "url": "https://owasp.org/www-project-non-human-identities-top-10/2025/9-nhi-reuse/"
+ }
+}

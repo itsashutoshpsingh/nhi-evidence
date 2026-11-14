@@ -1,0 +1,147 @@
+[
+ {
+  "sha256": "3af0d36e6018d3b7beee1a6a1b60c2f91b0d8a27003dd8757c6c995c5009944e",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/application.md",
+  "used_for": "Graph v1.0 application schema"
+ },
+ {
+  "sha256": "ba9ada60d70fa9d28199dda6430ce791f4fbe25a0eccb24470dace4d2721afc8",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/serviceprincipal.md",
+  "used_for": "Graph v1.0 serviceprincipal schema"
+ },
+ {
+  "sha256": "4381d9348becb047e41526fdf8f05cef4b13cc8cd16dd54c238a579967cdda49",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/agentidentity.md",
+  "used_for": "Graph v1.0 agentidentity schema"
+ },
+ {
+  "sha256": "1d6cec28bf5e7cdacd352ddbac31ec5579c28124e27ff782edc712415143ecdb",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/passwordcredential.md",
+  "used_for": "Graph v1.0 passwordcredential schema"
+ },
+ {
+  "sha256": "29e50c39550460ec65e91137360f555c5e040a91ee8a800cebfb7279a9dbf0fb",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/keycredential.md",
+  "used_for": "Graph v1.0 keycredential schema"
+ },
+ {
+  "sha256": "6778e9d7bd886de54526748865a76bd0f979ebfd4b405b443896a2e0725d5872",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/verifiedpublisher.md",
+  "used_for": "Graph v1.0 verifiedpublisher schema"
+ },
+ {
+  "sha256": "a89727c3e941464483f107d38aab316b0b009468b6832e8d84d3dc2a945c27ad",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/oauth2permissiongrant.md",
+  "used_for": "Graph v1.0 oauth2permissiongrant schema"
+ },
+ {
+  "sha256": "dabdb27a764587a1cac5d73d66511a6d46876fd4e1f231f767e8cde6bbf6e6aa",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/approleassignment.md",
+  "used_for": "Graph v1.0 approleassignment schema"
+ },
+ {
+  "sha256": "6e4f1024de1a606f48bc4066eee1619d229ce9d882a1855abb6334aec1dbe914",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/approle.md",
+  "used_for": "Graph v1.0 approle schema"
+ },
+ {
+  "sha256": "5be33f78d1acef7046c0726b8ae00d9f4dd1c39d4280003bef63ae803e355f36",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/unifiedroleassignment.md",
+  "used_for": "Graph v1.0 unifiedroleassignment schema"
+ },
+ {
+  "sha256": "13d209fc13a230b3e066871c3bd714bf5ebd05cb1c355df9e633a43cc542b090",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/unifiedroledefinition.md",
+  "used_for": "Graph v1.0 unifiedroledefinition schema"
+ },
+ {
+  "sha256": "8e3de6d569ff1875b52f161a5e7fce570ec4af83f76b9169fac757df3c7232ce",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/federatedidentitycredential.md",
+  "used_for": "Graph v1.0 federatedidentitycredential schema"
+ },
+ {
+  "sha256": "8bcec9ee9e2408b1c6e680b2b8960c9b217f5defe0590a220d89598c088c5654",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/beta/resources/federatedidentitycredential.md",
+  "used_for": "Graph beta federatedidentitycredential schema"
+ },
+ {
+  "sha256": "43d29209adccc6c6a6d9bf8cc50f04b9ade60d18d458057b817af085d07d4143",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/beta/resources/federatedidentityexpression.md",
+  "used_for": "Graph beta federatedidentityexpression schema"
+ },
+ {
+  "sha256": "7c03e582c842d1ffd2b6e8bcf1fbc385aa9638da4c12b2af970f4f3e8058108e",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/conditionalaccesspolicy.md",
+  "used_for": "Graph v1.0 conditionalaccesspolicy schema"
+ },
+ {
+  "sha256": "dc56cb68477e66d114aa568e4e9596d56fb7bb50b7f2e265d09e882f5395d80d",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/conditionalaccessconditionset.md",
+  "used_for": "Graph v1.0 conditionalaccessconditionset schema"
+ },
+ {
+  "sha256": "bf6dc7479c13c6d03c1d0a4f154784f3400732774b7f7eba2f516d7cbe76c2dd",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/conditionalaccessclientapplications.md",
+  "used_for": "Graph v1.0 conditionalaccessclientapplications schema"
+ },
+ {
+  "sha256": "753a5bba4371dcbcb800075c26a943f0244ae58813526a43de8944441f00c505",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/user.md",
+  "used_for": "Graph v1.0 user schema"
+ },
+ {
+  "sha256": "228f45eec88f57d82363ec13a2938dc462017677628d5b266a5b3899e2c655d0",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/group.md",
+  "used_for": "Graph v1.0 group schema"
+ },
+ {
+  "sha256": "4a39478ae90fea905259397274af3e3bd1b6025d422f6471b856aa1d30d5e27d",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/organization.md",
+  "used_for": "Graph v1.0 organization schema"
+ },
+ {
+  "sha256": "bd548e81a7bd189c2765335eed7128df05e588ccca22507c73601d03cd903f17",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/webapplication.md",
+  "used_for": "Graph v1.0 webapplication schema"
+ },
+ {
+  "sha256": "aac8d121d609b83353b00bafdf4e385e8f8ce8e69a66b14b74f5a1eb181c1c23",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/signin.md",
+  "used_for": "Graph v1.0 signin schema"
+ },
+ {
+  "sha256": "5e9ce49c255fb623e21fbbce4bcf3589746cb0236163f34934209366d84bb75e",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/signinstatus.md",
+  "used_for": "Graph v1.0 signinstatus schema"
+ },
+ {
+  "sha256": "ebcdcdac8bab8c0cfe438ac7d91ab9cb437b54fac587492ab9b6892f311a2308",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/beta/resources/serviceprincipalsigninactivity.md",
+  "used_for": "Graph beta serviceprincipalsigninactivity schema"
+ },
+ {
+  "sha256": "57670913843e07b8b7693e8a4dc09306566aa29389b2fbbe86b02c4341735a36",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/api-reference/v1.0/resources/signinactivity.md",
+  "used_for": "Graph v1.0 signinactivity schema"
+ },
+ {
+  "sha256": "f81dbe189ad4a22f830a915866e56879734000ed937f97419793fe042467060a",
+  "url": "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/2329b086341e67d36de55a5743af1a47224046ca/concepts/permissions-reference.md",
+  "used_for": "Graph permission names and IDs"
+ },
+ {
+  "sha256": "68dbe0130400270fb0f120e999c2b4c0ee26ead9f24195a502dfb4581a78e033",
+  "url": "https://raw.githubusercontent.com/MicrosoftDocs/entra-docs/01f21c9cc0b62201307d84ae8b9d42a28b6d1f49/docs/identity/role-based-access-control/permissions-reference.md",
+  "used_for": "Entra built-in role template IDs and privileged label"
+ },
+ {
+  "sha256": "772f6f8c259320124b7780d6aa8d365e38ee3f24af21a48c631c8e7000f4e46d",
+  "url": "https://raw.githubusercontent.com/OWASP/www-project-non-human-identities-top-10/16f8b79394662c6467eb7a1907b6af7e209b1fd9/2025/docs/top-10-2025.md",
+  "used_for": "OWASP NHI Top 10 2025 risk IDs and names"
+ },
+ {
+  "sha256": "9a89c36c495007cdf6afbf89ef43938f2084a2ab9448f28d8613ac7a426a7099",
+  "url": "https://raw.githubusercontent.com/OWASP/www-project-non-human-identities-top-10/16f8b79394662c6467eb7a1907b6af7e209b1fd9/2025/docs/detection-resources.md",
+  "used_for": "OWASP NHI detection resources index entry format"
+ }
+]

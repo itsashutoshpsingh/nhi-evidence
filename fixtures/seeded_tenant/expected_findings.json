@@ -1,0 +1,122 @@
+[
+ {
+  "issue": "S01",
+  "check_id": "C01",
+  "rule": "only_disabled_or_nonhuman_owners",
+  "object": "reporting-export",
+  "description": "App whose only owner is a disabled (departed) user",
+  "object_id": "1703235f-b665-5109-b8a2-1dd25b227262"
+ },
+ {
+  "issue": "S02",
+  "check_id": "C03",
+  "rule": "lifetime_over_limit",
+  "object": "legacy-crm-connector",
+  "description": "Client secret valid for 730 days",
+  "object_id": "f9f8da14-8c1a-50ac-9905-ad2a8afc2a44"
+ },
+ {
+  "issue": "S03",
+  "check_id": "C04",
+  "rule": "expired_present",
+  "object": "old-billing-api",
+  "description": "Expired client secret left on the app",
+  "object_id": "94aa3869-1477-524a-a0f3-93ee8ce2d30f"
+ },
+ {
+  "issue": "S04",
+  "check_id": "C05",
+  "rule": "secret_only",
+  "object": "nightly-report-job",
+  "description": "App-only job signing in with a secret, no certificate",
+  "object_id": "5b21188f-e267-5ab5-80e2-6340c00adcbc"
+ },
+ {
+  "issue": "S05",
+  "check_id": "C06",
+  "rule": "data_graph_permission",
+  "object": "doc-archiver",
+  "description": "Files.ReadWrite.All application permission",
+  "object_id": "015e3144-feb9-5da1-9475-2902d8301dac"
+ },
+ {
+  "issue": "S06",
+  "check_id": "C07",
+  "rule": "all_principals_sensitive_scope",
+  "object": "MailMerge Pro",
+  "description": "Admin consent for all users to Mail.Read and Files.ReadWrite.All",
+  "object_id": "f1a1ef19-4045-5101-bd9b-94c20d222d9c"
+ },
+ {
+  "issue": "S07",
+  "check_id": "C08",
+  "rule": "privileged_directory_role",
+  "object": "identity-automation",
+  "description": "Service principal holds Privileged Role Administrator",
+  "object_id": "45f6b237-501d-5c1d-953c-d5f09f02ea29"
+ },
+ {
+  "issue": "S08",
+  "check_id": "C09",
+  "rule": "github_pull_request",
+  "object": "infra-deployer",
+  "description": "GitHub federated credential trusts every pull request run",
+  "object_id": "2c339056-3f55-5d2a-9e74-5def96e73917"
+ },
+ {
+  "issue": "S09",
+  "check_id": "C10",
+  "rule": "unverified_publisher_with_access",
+  "object": "QuickSurvey",
+  "description": "Multi-tenant app, unverified publisher, holds User.Read.All",
+  "object_id": "03d968df-7ea7-5aba-bec6-4bef81060828"
+ },
+ {
+  "issue": "S10",
+  "check_id": "C11",
+  "rule": "prod_and_nonprod",
+  "object": "orders-api-ci",
+  "description": "One app trusted by both dev and production pipelines",
+  "object_id": "64e9ec4d-d1ff-5047-bbd7-6b933de7f2a2"
+ },
+ {
+  "issue": "S11",
+  "check_id": "C12",
+  "rule": "not_in_enforced_policy",
+  "object": "payroll-export",
+  "description": "Excluded from the workload identity Conditional Access policy",
+  "object_id": "e68b661c-0e21-51cf-ac0e-bcb286150d55"
+ },
+ {
+  "issue": "S12",
+  "check_id": "C13",
+  "rule": "path_from_non_privileged",
+  "object": "sharepoint-migrator",
+  "description": "Non-admin user owns an app holding Sites.FullControl.All",
+  "object_id": "5cbd28f9-ba4d-5e7a-a9ff-c3207383caf3"
+ },
+ {
+  "issue": "S12",
+  "check_id": "C06",
+  "rule": "data_graph_permission",
+  "object": "sharepoint-migrator",
+  "description": "(same app) Sites.FullControl.All",
+  "object_id": "5cbd28f9-ba4d-5e7a-a9ff-c3207383caf3"
+ },
+ {
+  "issue": "S13",
+  "check_id": "C02",
+  "rule": "stale_sign_in",
+  "object": "survey-importer",
+  "description": "Permissioned app with no sign-in for 200 days",
+  "object_id": "e8363b95-3036-5f64-a3a5-9983c7062cca"
+ },
+ {
+  "issue": "S14",
+  "check_id": "C14",
+  "rule": "interactive_service_account",
+  "object": "svc-backup",
+  "description": "Service account used for an interactive browser sign-in",
+  "object_id": "22dc1af0-e8f2-5559-946d-80e49575ac1c"
+ }
+]

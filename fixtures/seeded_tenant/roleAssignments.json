@@ -1,0 +1,32 @@
+[
+ {
+  "id": "FI39rFc6Yq78q9RMCoKJk8-jCvYXIOIjT__jxPYN_5Y=",
+  "principalId": "5e099ca4-5b5a-5925-9cee-83de79ce73a6",
+  "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+  "directoryScopeId": "/"
+ },
+ {
+  "id": "4WeiYC-yy6f0RCY7T-6eOPzd74i5b_XyKItGZSe-vCc=",
+  "principalId": "a4d9311d-4fe9-5c1d-86b8-734b7a08c940",
+  "roleDefinitionId": "158c047a-c907-4556-b7ef-446551a6b5f7",
+  "directoryScopeId": "/"
+ },
+ {
+  "id": "6FUXVMVhAWkZHp98bg_p5zCzAmVUyjcwzHJBrldvjGI=",
+  "principalId": "4c7b65dc-fbd5-56e9-ae94-d490067e0bc8",
+  "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+  "directoryScopeId": "/"
+ },
+ {
+  "id": "O3ZOzxyYJeOBKhJbJ7oM0OsWN6WvJIxvlhTiSWwiEW0=",
+  "principalId": "45f6b237-501d-5c1d-953c-d5f09f02ea29",
+  "roleDefinitionId": "e8611ab8-c189-46e8-94e1-60213ab1f814",
+  "directoryScopeId": "/"
+ },
+ {
+  "id": "SLEQqT3JyM4v7CWXnzy8U763UckgqZIkuRgDPSc51nc=",
+  "principalId": "7da4d270-041b-5127-af9f-7947dbcc4a1d",
+  "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+  "directoryScopeId": "/"
+ }
+]

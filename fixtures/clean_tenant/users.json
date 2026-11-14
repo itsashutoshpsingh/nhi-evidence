@@ -1,0 +1,51 @@
+[
+ {
+  "id": "5e099ca4-5b5a-5925-9cee-83de79ce73a6",
+  "displayName": "Alice Admin",
+  "userPrincipalName": "alice@lab.example",
+  "accountEnabled": true,
+  "userType": "Member"
+ },
+ {
+  "id": "4c7b65dc-fbd5-56e9-ae94-d490067e0bc8",
+  "displayName": "Erin Appadmin",
+  "userPrincipalName": "erin@lab.example",
+  "accountEnabled": true,
+  "userType": "Member"
+ },
+ {
+  "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+  "displayName": "Bob Builder",
+  "userPrincipalName": "bob@lab.example",
+  "accountEnabled": true,
+  "userType": "Member"
+ },
+ {
+  "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+  "displayName": "Carol Clark",
+  "userPrincipalName": "carol@lab.example",
+  "accountEnabled": true,
+  "userType": "Member"
+ },
+ {
+  "id": "bec5df5a-f42d-53e0-a24b-762597740358",
+  "displayName": "Dave Departed",
+  "userPrincipalName": "dave@lab.example",
+  "accountEnabled": false,
+  "userType": "Member"
+ },
+ {
+  "id": "2d4c0b20-5a6a-5f52-9723-0145a65e7421",
+  "displayName": "Frank Field",
+  "userPrincipalName": "frank@lab.example",
+  "accountEnabled": true,
+  "userType": "Member"
+ },
+ {
+  "id": "22dc1af0-e8f2-5559-946d-80e49575ac1c",
+  "displayName": "svc-backup",
+  "userPrincipalName": "svc-backup@lab.example",
+  "accountEnabled": true,
+  "userType": "Member"
+ }
+]

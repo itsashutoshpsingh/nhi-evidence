@@ -1,0 +1,41 @@
+[
+ {
+  "id": "87cf0956-68cb-5754-a966-9eb95213889f",
+  "displayName": "Block workload identities outside trusted locations",
+  "state": "enabled",
+  "createdDateTime": "2026-01-05T00:00:00Z",
+  "modifiedDateTime": "2026-10-02T00:00:00Z",
+  "conditions": {
+   "applications": {
+    "includeApplications": [
+     "All"
+    ],
+    "excludeApplications": []
+   },
+   "clientApplications": {
+    "includeServicePrincipals": [
+     "ServicePrincipalsInMyTenant"
+    ],
+    "excludeServicePrincipals": [
+     "e68b661c-0e21-51cf-ac0e-bcb286150d55"
+    ],
+    "servicePrincipalFilter": null
+   },
+   "locations": {
+    "includeLocations": [
+     "All"
+    ],
+    "excludeLocations": [
+     "AllTrusted"
+    ]
+   }
+  },
+  "grantControls": {
+   "operator": "OR",
+   "builtInControls": [
+    "block"
+   ]
+  },
+  "sessionControls": null
+ }
+]

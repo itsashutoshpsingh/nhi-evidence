@@ -1,0 +1,10 @@
+{
+ "collected_at": "2026-11-01T00:00:00Z",
+ "source": "synthetic fixture",
+ "tenant": "synthetic, not a real tenant",
+ "api_versions": {
+  "servicePrincipalSignInActivities": "beta",
+  "federatedIdentityCredentials": "beta",
+  "default": "v1.0"
+ }
+}

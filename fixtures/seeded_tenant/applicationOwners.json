@@ -1,0 +1,212 @@
+{
+ "1703235f-b665-5109-b8a2-1dd25b227262": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "bec5df5a-f42d-53e0-a24b-762597740358",
+   "displayName": "Dave Departed",
+   "userPrincipalName": "dave@lab.example",
+   "accountEnabled": false
+  }
+ ],
+ "0adef8e9-4c73-539d-8e07-7c8ce15c77cb": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "bec5df5a-f42d-53e0-a24b-762597740358",
+   "displayName": "Dave Departed",
+   "userPrincipalName": "dave@lab.example",
+   "accountEnabled": false
+  },
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "32122925-d759-5366-bfb7-a061198f9717": [],
+ "f9f8da14-8c1a-50ac-9905-ad2a8afc2a44": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "5df21d7d-41e4-512a-b418-db9bf46df555": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "282f3d0a-97b7-5be8-91a6-f950d2e8850e": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "94aa3869-1477-524a-a0f3-93ee8ce2d30f": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "8be2f1fd-37b2-5e9d-b750-9c7a9ac8725f": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "5b21188f-e267-5ab5-80e2-6340c00adcbc": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "0b49d053-3b69-5ed7-bbd7-3dcc8d1b2527": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "d6e5be1d-ce9e-5e1e-a80f-273ec54e50d3": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "a13d7780-432d-5df0-b0d6-4207dbc13fc6": [],
+ "b2d77906-70e9-5fa4-bf10-6762b635fc74": [],
+ "7e37b16f-4c2d-543f-a59f-68e34f9095a0": [],
+ "c0158e9b-68af-5b04-8c9a-a9004b96db74": [],
+ "2c339056-3f55-5d2a-9e74-5def96e73917": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "e1754448-06ed-5bed-b050-dfcf3d09090f": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "7c6f2685-87fe-5e1b-86a5-5a10235c9f16": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "64e9ec4d-d1ff-5047-bbd7-6b933de7f2a2": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "f49afe8a-097d-55d3-be86-dd8f70397b7b": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "5977b87f-5002-51bf-ab97-096efdc54726": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "674177ce-3cf8-5448-8338-a1202a0897f9": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "8da8a791-9454-5cb3-8cb9-89b75da3cec7": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "dac4b7e5-21f4-5fce-8309-69cd7f9521ed": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "f8cf919c-d906-5d6f-a69b-1868396bdb84": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "7f69a794-d32e-5df5-8d28-33d51d2d6d02": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "6f079c0e-3ade-52a5-a5a3-3de8cbbb0e30": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ]
+}

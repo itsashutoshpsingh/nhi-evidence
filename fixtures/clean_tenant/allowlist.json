@@ -1,0 +1,10 @@
+[
+ {
+  "appId": "e9a70fb6-45e8-5e79-b6f8-e29cf15a76c4",
+  "checks": [
+   "C06",
+   "C10"
+  ],
+  "reason": "Approved vendor backup service: security review SR-2291, re-review due 2027-01"
+ }
+]

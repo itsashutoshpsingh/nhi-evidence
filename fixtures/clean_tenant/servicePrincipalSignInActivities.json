@@ -1,0 +1,794 @@
+[
+ {
+  "id": "gzaIj56Nhh5777d2lDJOkBXwtKTJsv3YAcSgpKNO3XE=",
+  "appId": "00c5ce72-571c-542e-ac5d-355f3c67423a",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "cc8a57fd-1ed2-5c46-8549-37891b6e2fc3"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "cc8a57fd-1ed2-5c46-8549-37891b6e2fc3"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "mAaw1l7TMyLj30tgLrkksjPuT-5ZW5AxIqldKlYrnQk=",
+  "appId": "aabf96c7-34bb-5b86-a890-1b0b9d941135",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "e46b18bf-b4b6-5b9a-9b2c-b599b631fe82"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "e46b18bf-b4b6-5b9a-9b2c-b599b631fe82"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "GZD2CokL2vIC7X-Ew7Q5fIbhDO9Fag4WyCmZC5KqmSQ=",
+  "appId": "e734935f-7153-5adf-ad6c-3158896b5d97",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "661e89e4-4067-5dae-ab41-6f889b487702"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "661e89e4-4067-5dae-ab41-6f889b487702"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "onVpBqsoIqaF7H_mZvFDzjRxPRhGlixr0E4MHS8VqRs=",
+  "appId": "2a1857d8-b29f-5b8d-a012-8837c91b9644",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "e87fcae2-1e9e-509c-b99c-b1afffe267b1"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "e87fcae2-1e9e-509c-b99c-b1afffe267b1"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "siRpj8nWtpezgQKwe9BA-mkly98uF3NfF9ylqqK7lIg=",
+  "appId": "09623f8a-bb1a-56ea-9ac1-01b67167b66f",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "28467019-0ab9-59c6-82bc-902047c95aeb"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "28467019-0ab9-59c6-82bc-902047c95aeb"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "JZhqPoouZUp8Vh8h2woaAU2jnw1CIPM_ABtOWAv4J0U=",
+  "appId": "841463a7-d191-52ac-b862-70beee741918",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "91af5cc9-6682-5900-85e3-d8da8149117c"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "91af5cc9-6682-5900-85e3-d8da8149117c"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "gGJGWaAwVrVA7KW3ZvvTMrwKEkbAvU6oqgSsVseRTAo=",
+  "appId": "aa2e6a12-40b2-5b1b-b396-84b94806ec26",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "fd03c75f-440f-526d-a7b1-aae40caa4cdb"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "fd03c75f-440f-526d-a7b1-aae40caa4cdb"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "L5fx5RW07aJq17uLZMRKl5YPNMRJcb0STAtKKA3VLy0=",
+  "appId": "3bef7262-2c03-57ae-803c-f44dce0fc4a0",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "0cf0e1fe-ba80-5eff-bfb8-4f44069379c4"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "0cf0e1fe-ba80-5eff-bfb8-4f44069379c4"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "v3uvnvQSDjUiiv0D1f84qh87rAJa-DU546eDKISpLU8=",
+  "appId": "cca75949-9999-546e-9496-5d69fa7e4277",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "c865d193-cdec-5db1-ba10-348ace3772ca"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "c865d193-cdec-5db1-ba10-348ace3772ca"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "TTiHpPWfyKqAt6l4jwx_hNMY0ZC9ka8_rFQAxFGhee8=",
+  "appId": "9c12fa7b-3299-54b7-a69d-3c3d5486a0d1",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "0b28a5c4-9965-5371-aa61-41977eda1e05"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "0b28a5c4-9965-5371-aa61-41977eda1e05"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "SMKkhBbIGbmm1ybb4jJ8YpxgKlyrFMD4rvsKAeIdcMQ=",
+  "appId": "46c51cc5-5cfe-549c-afef-044c13618abe",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "f35718a7-17ca-51b7-837d-532a74f17530"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "f35718a7-17ca-51b7-837d-532a74f17530"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "XoxYfOzBTeT0BUlKKIjKSmjnt80AVUxRlo1FuUaY_kc=",
+  "appId": "98f27186-5d94-53ea-a371-64ad82605e37",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "58b10931-1da3-533f-80af-54e6bd14d7a8"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "58b10931-1da3-533f-80af-54e6bd14d7a8"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "xiIj2iP0vKyAuzcluf4tYgF6W_UUsFeBpcG4w6Us4fQ=",
+  "appId": "4151dda2-2451-5807-abbe-36b7fbeaa73a",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "d670a7ac-7761-577a-bfbb-77b8ab01f702"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "d670a7ac-7761-577a-bfbb-77b8ab01f702"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "iR3DjJJUzYFfGx1clAjh5CH9JirHSkFBFzR2OQgraNQ=",
+  "appId": "cc790148-1ab6-547a-a774-f465ad414a10",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "058ad650-cb43-5b83-8671-d487fa151631"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "058ad650-cb43-5b83-8671-d487fa151631"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "yGSEFZ5cTWDbVmYBR_TrViCvDXs6GQa88huUeneOugY=",
+  "appId": "56a953ea-270d-504d-bd01-259dc9d3002f",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "38a6f7c9-a193-58ee-b1a0-0915e19e0615"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "38a6f7c9-a193-58ee-b1a0-0915e19e0615"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "lU8o3h4-D2PFrPwaZkAcYPMzhJ03CSBEvZ2aYHR1Bvw=",
+  "appId": "b6469a81-5df8-5654-bc8f-ea32b1b91406",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "8f8baff9-8b7a-5c67-adc2-beb03a0c584d"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "8f8baff9-8b7a-5c67-adc2-beb03a0c584d"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "pqj7nIIWm00fTctp5FLkP15xrraGrsHTI0FxnbJdOqg=",
+  "appId": "fe5e9074-4483-509a-a098-fc26c774352d",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "46705420-e301-53c1-8700-95ac131d816b"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "46705420-e301-53c1-8700-95ac131d816b"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "QREGA7L-HoVFNKfxgwRfxS2gk3VkCkp_8krYb1T_1EQ=",
+  "appId": "165fca0f-2b6b-551e-9a36-d97017123e6d",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "92bbde97-08b7-5eff-be65-21ab4d2e270b"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "92bbde97-08b7-5eff-be65-21ab4d2e270b"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "4e0psHDPG4f1Na7jtxP3NaVVWXav_BtzWwTfrohnfF4=",
+  "appId": "ecfccac9-6707-5ae9-b8b4-e2619e7cb3f1",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "7d6520a2-6acb-5ebb-a4d7-5657e9f9f05d"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "7d6520a2-6acb-5ebb-a4d7-5657e9f9f05d"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "9ETacHCWR6WU21r2dNb10Kp61Sh-SwPCxEZoRSF-mgE=",
+  "appId": "b0f97d23-ac7a-5d67-b40c-030ad04dbd63",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "dbba731e-bc22-5a6f-82c7-dd07e897782a"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "dbba731e-bc22-5a6f-82c7-dd07e897782a"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "x5a__s14GcI19pxpdNyW1CH4uT01akru5DcNw8Jo6Ds=",
+  "appId": "8ecb38d6-cb91-5ffa-9232-202166f72559",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "c6aee66a-4963-531c-aa13-b7eefc04271d"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "c6aee66a-4963-531c-aa13-b7eefc04271d"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "X2kghwWJCKXvwLrW0t83muN0CXPgBjZGzxqDwlqJffM=",
+  "appId": "e7e4ca1a-16a4-5c20-b0a9-5a52ecb9b2b4",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "47df74f6-e3bc-5644-8e29-523e052b51a6"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "47df74f6-e3bc-5644-8e29-523e052b51a6"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "N1diutq5tPVzP5ZtGzLEyohAjHk6uf0yo2JMMl97Szc=",
+  "appId": "2abf7c39-70b2-5425-ada4-5a9ef547e3eb",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "8a256363-f85e-56cf-ae95-7067c6f73a0d"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "8a256363-f85e-56cf-ae95-7067c6f73a0d"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "64udQ4Pu_PJUwMV0WP-FgxEG1ovHiwZXQPBbI3LPDY8=",
+  "appId": "c8b31435-a309-545a-83bb-91bb0545f31e",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "6e453677-d701-577a-a7b9-8b7489e5a78e"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "6e453677-d701-577a-a7b9-8b7489e5a78e"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "7IFbeEeACzGD-gIww7vPlmP5UaX4JTNNsstFpA23Eyo=",
+  "appId": "b6e280c9-50b4-52b1-8274-c65341135876",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "6c28418c-d411-5a81-ad76-67f8f5c49880"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "6c28418c-d411-5a81-ad76-67f8f5c49880"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "bQK86H33xuuvDTTfqJ-9yLtwutdnYTpAghnmkMN4ckQ=",
+  "appId": "c7f35f56-4712-5d51-851e-3d511e44c4e3",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "52d890fb-795d-5d24-98a3-989d076233b6"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "52d890fb-795d-5d24-98a3-989d076233b6"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "AZfPESLPwb3g04rLMcyM_lsNIclGdhLpcf8TPst9CtA=",
+  "appId": "23418b23-3550-5f68-a2e7-81f5fdf51f33",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "b5e4184d-d89e-5584-9369-96e9a538f251"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "b5e4184d-d89e-5584-9369-96e9a538f251"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "2slx2sKvEDHRIzLw8o-tHkQm2Y3fzuIHY4Y12HaaN4k=",
+  "appId": "4a0797c2-97e0-5d26-85cc-0bd0722ba771",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "e40ba585-4808-5d29-8907-7cf1d4955f2b"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "e40ba585-4808-5d29-8907-7cf1d4955f2b"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "C66kOjV-kF8k1tqaX1VYf_9o8HeZoqxZb_IgTnne70s=",
+  "appId": "0f90a336-8667-53c2-b726-507187fb110a",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "3e1c4f9f-9ecc-5e69-9b13-1a71464a5e65"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "3e1c4f9f-9ecc-5e69-9b13-1a71464a5e65"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "VENhwJ2IoQ1B8VkQXCAnaRxSOMcAFstLWGPd-IG9MQY=",
+  "appId": "e434cba4-a5f2-54c7-8068-d72632e81504",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "917eb229-8493-5468-803a-0208a563a6dd"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "917eb229-8493-5468-803a-0208a563a6dd"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "185itny72aFHw8dtvvPVMEoitI8D9G-nL73bII9hwD0=",
+  "appId": "1ee95052-de7a-521a-ba7e-1c50aab73fea",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "3be370be-5577-558c-947a-fbdc2565ba8d"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "3be370be-5577-558c-947a-fbdc2565ba8d"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "bcJakVIcUR6j6sQDPf2ZAIOEP5JqVZm-LhhQTlKwUPA=",
+  "appId": "61ae76dd-1d42-5deb-8be5-063057b1cacc",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-27T00:00:00Z",
+   "lastSignInRequestId": "799bf73f-83ed-5ad3-a9a9-d242299ed7f7"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-27T00:00:00Z",
+   "lastSignInRequestId": "799bf73f-83ed-5ad3-a9a9-d242299ed7f7"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "Cy9F9ZIeVs87NKChpYZcOfYr5x2nGt84ObbWWD4LEIw=",
+  "appId": "e9a70fb6-45e8-5e79-b6f8-e29cf15a76c4",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "6169144c-0caa-517c-9da3-a21e97aba806"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "6169144c-0caa-517c-9da3-a21e97aba806"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ }
+]

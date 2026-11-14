@@ -1,0 +1,34 @@
+[
+ {
+  "id": "6biaf9OPUFYhepLs80nifzaUc-iaYKDJf9lCs3oD6ik=",
+  "clientId": "30047f65-e34d-5b99-be6b-7a7e772b1dd0",
+  "consentType": "AllPrincipals",
+  "principalId": null,
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5",
+  "scope": "openid profile offline_access User.Read Directory.AccessAsUser.All"
+ },
+ {
+  "id": "gjInqhqGYR7cU719YbfoJpZzhlTePC32Cwp3qI5TweE=",
+  "clientId": "f1a1ef19-4045-5101-bd9b-94c20d222d9c",
+  "consentType": "AllPrincipals",
+  "principalId": null,
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5",
+  "scope": "openid profile User.Read"
+ },
+ {
+  "id": "iWfm4pBte_zweMK0fbB3rJviortStygQNDaY2fwSMco=",
+  "clientId": "909d1e47-5236-50f1-8494-7298a16a152f",
+  "consentType": "AllPrincipals",
+  "principalId": null,
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5",
+  "scope": "openid profile email offline_access User.Read"
+ },
+ {
+  "id": "OiruGSCczSXO_AMzm-emrRgD5INHe_oHItr5MfdT7HE=",
+  "clientId": "a314bc82-5bdf-585c-93b9-96edf18ada74",
+  "consentType": "Principal",
+  "principalId": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5",
+  "scope": "openid User.Read Mail.Read"
+ }
+]

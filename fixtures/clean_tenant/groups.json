@@ -1,0 +1,9 @@
+[
+ {
+  "id": "a4d9311d-4fe9-5c1d-86b8-734b7a08c940",
+  "displayName": "App Admins",
+  "isAssignableToRole": true,
+  "securityEnabled": true,
+  "mailEnabled": false
+ }
+]

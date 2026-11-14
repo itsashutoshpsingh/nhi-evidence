@@ -1,0 +1,178 @@
+[
+ {
+  "id": "TDbl-aqJ3-NwXhEhLb3WDAIzf458LPrL0_QRA0lfXKI=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "directory-sync-prod",
+  "principalId": "b5827242-72c2-5ec3-b02d-fa570cc73663",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "imxwXVuQt_XFNWGxmUfKAeNZOjgTuDZkY42sxpsq6I0=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "nightly-report-job",
+  "principalId": "d3190b6f-035d-54f0-939a-b3820899300f",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "O8om-J2lLswsBZIcepQzbH9C1HjQahZDr1NIC___8RM=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "metrics-collector",
+  "principalId": "24e6742a-47b7-5529-b045-3d0b100f735e",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "DwG0WqFuAnVNhUV5ds2oXNyGxZ_g4VnJEYWJkaADduo=",
+  "appRoleId": "883ea226-0bf2-4a8f-9f9d-92c9162a727d",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "doc-archiver",
+  "principalId": "015e3144-feb9-5da1-9475-2902d8301dac",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "aZvM4mSTydaDo4ZQgzFfcy7eXvT9MB2kWUqeq6HWVjs=",
+  "appRoleId": "9a5d68dd-52b0-4cc2-bd40-abcf44ac3a30",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "people-directory",
+  "principalId": "97d51dda-8889-5278-9662-50658ce23e21",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "5Xbc55k7guBEqbb7hqvP0WKFas5G8Q5TusRKa6IAba8=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "QuickSurvey",
+  "principalId": "03d968df-7ea7-5aba-bec6-4bef81060828",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "yB7F_PGHIM-_ML2wcAGNU5jnzWB2F0hrSvJqR0aB_uM=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "TicketDesk",
+  "principalId": "0521df85-6367-51bb-a924-496829053bb4",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "_jYggwGJFaDKn8b6fZ-x-9nxw9slE7ud6dO1Hog3l4c=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "payroll-export",
+  "principalId": "e68b661c-0e21-51cf-ac0e-bcb286150d55",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "GvsPx13uwMCo148jjO6msRUBz2DWJSck9KOPGLtVChU=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "mi-backup-vault",
+  "principalId": "c23d1354-935d-5985-8721-76192af73099",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "eoClILGV5Td3_b5KFiMjkH4VCdvQqGZv-UG8OEZ9wK8=",
+  "appRoleId": "883ea226-0bf2-4a8f-9f9d-92c9162a727d",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "sharepoint-migrator",
+  "principalId": "5cbd28f9-ba4d-5e7a-a9ff-c3207383caf3",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "HXPx3nXVUg7VSqpLaVFeNzOm0jKMYbVFYBtFOd4EJnI=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "teams-notifier",
+  "principalId": "bdd6eb40-99a8-5b7f-affa-793de59c84db",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "-tXUuyfBJfpqHRvVO628CJ3hyjgyHXLCgR3wMt2jlw0=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "survey-importer",
+  "principalId": "e8363b95-3036-5f64-a3a5-9983c7062cca",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "WYYVpuHhTiWmevDYbFzrRYNZoL27eohSnb8A4qfdsj8=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "new-intake-bot",
+  "principalId": "59e14ce1-b621-50fb-ad15-e4368a969cd5",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "dFbLqYEpjBGSovwsx5wDOcyBr-rYvSplqBkL6_JQBEM=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "retired-tool",
+  "principalId": "fd4aefa9-f67d-5b82-b8b1-91c03a8967dc",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "ASzQyLnsUeKGNevWLMCrTzi1h7EYUaRjBSuM5QYuXnE=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "mail-triage-agent",
+  "principalId": "286473a0-2949-5074-80df-0d5341e5f667",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "XnH-buEL6ew__r-AydUiF2fDdccCN-tB4uyZphpLqkw=",
+  "appRoleId": "810c84a8-4a9e-49e6-bf7d-12d183f40d01",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "BackupVault Cloud",
+  "principalId": "9d3ba121-c619-5d45-9cbc-73c9ca541ab0",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ }
+]

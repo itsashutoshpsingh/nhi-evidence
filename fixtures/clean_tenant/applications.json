@@ -1,0 +1,1067 @@
+[
+ {
+  "id": "1703235f-b665-5109-b8a2-1dd25b227262",
+  "appId": "00c5ce72-571c-542e-ac5d-355f3c67423a",
+  "displayName": "reporting-export",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "reporting-export-0 secret",
+    "endDateTime": "2027-01-20T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "66a30e2e-310e-56e1-9e3e-36b5b8239ccc",
+    "secretText": null,
+    "startDateTime": "2026-10-22T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
+  "id": "0adef8e9-4c73-539d-8e07-7c8ce15c77cb",
+  "appId": "aabf96c7-34bb-5b86-a890-1b0b9d941135",
+  "displayName": "invoice-sync",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "5F90B0783F82C3282A391D9A756AD32277B479E3",
+    "displayName": "CN=invoice-sync-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "96284fef-2188-51b1-8d1d-a4f8d3b13a55",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "32122925-d759-5366-bfb7-a061198f9717",
+  "appId": "e734935f-7153-5adf-ad6c-3158896b5d97",
+  "displayName": "directory-sync-prod",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": "CMDB-4411",
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "385097B6B1FADFAE431EE13136F90BA5A66B450F",
+    "displayName": "CN=directory-sync-prod-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "fdfb1a8d-df8c-5e2e-983c-91ecca00c8b4",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "f9f8da14-8c1a-50ac-9905-ad2a8afc2a44",
+  "appId": "2a1857d8-b29f-5b8d-a012-8837c91b9644",
+  "displayName": "legacy-crm-connector",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "legacy-crm-connector-0 secret",
+    "endDateTime": "2027-01-20T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "4251d9f6-5882-573a-8d45-10d9b6749bdb",
+    "secretText": null,
+    "startDateTime": "2026-10-22T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
+  "id": "5df21d7d-41e4-512a-b418-db9bf46df555",
+  "appId": "09623f8a-bb1a-56ea-9ac1-01b67167b66f",
+  "displayName": "hr-portal",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [
+    "https://hr.lab.example/auth"
+   ],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "hr-portal-0 secret",
+    "endDateTime": "2027-04-10T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "e7d9e61e-260c-52c5-b63d-2bba2bc105da",
+    "secretText": null,
+    "startDateTime": "2026-10-12T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
+  "id": "282f3d0a-97b7-5be8-91a6-f950d2e8850e",
+  "appId": "841463a7-d191-52ac-b862-70beee741918",
+  "displayName": "partner-portal",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "partner-portal-0 secret",
+    "endDateTime": "2027-04-09T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "59f5b8f1-0c8b-564a-9e2e-33ca1fce479d",
+    "secretText": null,
+    "startDateTime": "2026-10-12T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
+  "id": "94aa3869-1477-524a-a0f3-93ee8ce2d30f",
+  "appId": "aa2e6a12-40b2-5b1b-b396-84b94806ec26",
+  "displayName": "old-billing-api",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "BC648FF580551C30F26A4BD736B1A23606E98717",
+    "displayName": "CN=old-billing-api-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "e472a700-5b32-5fec-8f9e-ab135e41f99f",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "8be2f1fd-37b2-5e9d-b750-9c7a9ac8725f",
+  "appId": "3bef7262-2c03-57ae-803c-f44dce0fc4a0",
+  "displayName": "status-page",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "status-page-0 secret",
+    "endDateTime": "2026-11-06T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "e1af3530-d511-5e03-a200-46fc13bde320",
+    "secretText": null,
+    "startDateTime": "2026-08-08T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
+  "id": "5b21188f-e267-5ab5-80e2-6340c00adcbc",
+  "appId": "cca75949-9999-546e-9496-5d69fa7e4277",
+  "displayName": "nightly-report-job",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "EA802F9E280889745F0934CC7D12A1F4977096E7",
+    "displayName": "CN=nightly-report-job-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "c38136d5-f2cd-5d36-823a-24d6670d3965",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "0b49d053-3b69-5ed7-bbd7-3dcc8d1b2527",
+  "appId": "9c12fa7b-3299-54b7-a69d-3c3d5486a0d1",
+  "displayName": "metrics-collector",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "5171354F80595928E16F4CE9AE562957D13F8DD1",
+    "displayName": "CN=metrics-collector-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "abbd6599-3e84-5082-866c-21549f3e0020",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "d6e5be1d-ce9e-5e1e-a80f-273ec54e50d3",
+  "appId": "46c51cc5-5cfe-549c-afef-044c13618abe",
+  "displayName": "web-signin-app",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [
+    "https://portal.lab.example/signin"
+   ],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "web-signin-app-0 secret",
+    "endDateTime": "2027-01-20T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "1529233b-c38c-55c2-9a91-7673c8dd8d58",
+    "secretText": null,
+    "startDateTime": "2026-10-22T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
+  "id": "a13d7780-432d-5df0-b0d6-4207dbc13fc6",
+  "appId": "98f27186-5d94-53ea-a371-64ad82605e37",
+  "displayName": "doc-archiver",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": "CMDB-5120",
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "7470B0EFF5C581EBCAAD3FB11F08F0161FA664CF",
+    "displayName": "CN=doc-archiver-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "6e9b73f1-8669-54e1-ba80-9b52fe334092",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "b2d77906-70e9-5fa4-bf10-6762b635fc74",
+  "appId": "4151dda2-2451-5807-abbe-36b7fbeaa73a",
+  "displayName": "people-directory",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": "CMDB-5121",
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "800B67CB1A6582B08DB735A65405878C64A008AE",
+    "displayName": "CN=people-directory-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "7bea2f7d-6d74-5e4c-9c42-747c4b03f6bb",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "7e37b16f-4c2d-543f-a59f-68e34f9095a0",
+  "appId": "fe5e9074-4483-509a-a098-fc26c774352d",
+  "displayName": "identity-automation",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": "CMDB-6001",
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "81454F30EA0EB5BDE9BBA9A966F3FFE89A4B7968",
+    "displayName": "CN=identity-automation-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "46af72e5-da37-53b7-a48a-4051baa37c7a",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "c0158e9b-68af-5b04-8c9a-a9004b96db74",
+  "appId": "165fca0f-2b6b-551e-9a36-d97017123e6d",
+  "displayName": "audit-reader",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": "CMDB-6002",
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "FECDE9F84CD3819EFE8DF664FFE84E7CFD22B7DE",
+    "displayName": "CN=audit-reader-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "d3bec831-eea8-5d62-a1d7-f10ecd7c81cd",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "2c339056-3f55-5d2a-9e74-5def96e73917",
+  "appId": "ecfccac9-6707-5ae9-b8b4-e2619e7cb3f1",
+  "displayName": "infra-deployer",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": []
+ },
+ {
+  "id": "e1754448-06ed-5bed-b050-dfcf3d09090f",
+  "appId": "b0f97d23-ac7a-5d67-b40c-030ad04dbd63",
+  "displayName": "site-builder",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": []
+ },
+ {
+  "id": "7c6f2685-87fe-5e1b-86a5-5a10235c9f16",
+  "appId": "8ecb38d6-cb91-5ffa-9232-202166f72559",
+  "displayName": "aks-workload",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": []
+ },
+ {
+  "id": "64e9ec4d-d1ff-5047-bbd7-6b933de7f2a2",
+  "appId": "b6e280c9-50b4-52b1-8274-c65341135876",
+  "displayName": "orders-api-ci",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": []
+ },
+ {
+  "id": "00f3fedf-b9eb-5258-a822-a5749392b16e",
+  "appId": "c7f35f56-4712-5d51-851e-3d511e44c4e3",
+  "displayName": "orders-api-ci-dev",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": []
+ },
+ {
+  "id": "f49afe8a-097d-55d3-be86-dd8f70397b7b",
+  "appId": "23418b23-3550-5f68-a2e7-81f5fdf51f33",
+  "displayName": "orders-web-dev",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [
+    "https://orders-dev.lab.example/auth"
+   ],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "orders-web-dev-0 secret",
+    "endDateTime": "2027-01-20T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "8d3f403c-1ccb-57e9-bc9e-5b23cad9fd15",
+    "secretText": null,
+    "startDateTime": "2026-10-22T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
+  "id": "5977b87f-5002-51bf-ab97-096efdc54726",
+  "appId": "4a0797c2-97e0-5d26-85cc-0bd0722ba771",
+  "displayName": "orders-web-prod",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [
+    "https://orders-prod.lab.example/auth"
+   ],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "orders-web-prod-0 secret",
+    "endDateTime": "2027-01-20T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "f8c22129-4ea3-5f62-b1d5-95b54c939bf5",
+    "secretText": null,
+    "startDateTime": "2026-10-22T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
+  "id": "674177ce-3cf8-5448-8338-a1202a0897f9",
+  "appId": "0f90a336-8667-53c2-b726-507187fb110a",
+  "displayName": "payroll-export",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "D07C37F9A827DA8171BA528ADA0B0E0132D8A8C9",
+    "displayName": "CN=payroll-export-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "f1d1bb5f-dff0-5997-a1d8-b872b8be3ff0",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "8da8a791-9454-5cb3-8cb9-89b75da3cec7",
+  "appId": "e434cba4-a5f2-54c7-8068-d72632e81504",
+  "displayName": "sharepoint-migrator",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": "CMDB-7003",
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "AC9A19394708C34B4149F9F275B3A55CA7D507B1",
+    "displayName": "CN=sharepoint-migrator-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "470aa1c6-0f80-5279-8a46-1c4d8efaf1cf",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "dac4b7e5-21f4-5fce-8309-69cd7f9521ed",
+  "appId": "1ee95052-de7a-521a-ba7e-1c50aab73fea",
+  "displayName": "teams-notifier",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "5093AD96E9276F0FD7D657EFB1402DF6378D601A",
+    "displayName": "CN=teams-notifier-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "9ff28d99-0a83-5e43-b6d8-f7fa7169bf80",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "f8cf919c-d906-5d6f-a69b-1868396bdb84",
+  "appId": "61ae76dd-1d42-5deb-8be5-063057b1cacc",
+  "displayName": "survey-importer",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "CAE772EF5AD1D72A0DFBB55E61E3CB28D4393116",
+    "displayName": "CN=survey-importer-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "48e4d36b-70eb-57aa-a3f4-374186380428",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "7f69a794-d32e-5df5-8d28-33d51d2d6d02",
+  "appId": "f6b47a27-8860-5d88-9a4c-daaa40aef0cd",
+  "displayName": "new-intake-bot",
+  "createdDateTime": "2026-10-12T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "AE06758B655B9998EB9771FFF40CC190C500CE0C",
+    "displayName": "CN=new-intake-bot-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "13f33430-3598-5a00-9f84-62fdbab2cb07",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "6f079c0e-3ade-52a5-a5a3-3de8cbbb0e30",
+  "appId": "7d7a344c-8083-5bce-8da6-79592acba0fd",
+  "displayName": "retired-tool",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "B0F0C3981E9F26C8D9CDD57BAE83CFBFC578D27B",
+    "displayName": "CN=retired-tool-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "ec265cea-9d09-57e8-bcab-e8a444d7ce76",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ }
+]

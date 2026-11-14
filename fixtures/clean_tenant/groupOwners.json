@@ -1,0 +1,11 @@
+{
+ "a4d9311d-4fe9-5c1d-86b8-734b7a08c940": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "5e099ca4-5b5a-5925-9cee-83de79ce73a6",
+   "displayName": "Alice Admin",
+   "userPrincipalName": "alice@lab.example",
+   "accountEnabled": true
+  }
+ ]
+}

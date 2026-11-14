@@ -1,0 +1,20 @@
+{
+ "286473a0-2949-5074-80df-0d5341e5f667": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "00df42b1-a0ee-5cb7-b713-74cce2f6a3ae": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ]
+}

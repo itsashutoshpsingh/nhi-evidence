@@ -3,43 +3,43 @@
  "headline": "On a seeded test tenant built from fixtures shaped like Microsoft Graph data (not a live tenant), 14 read only checks found all 15 planted findings from 14 misconfigurations with 0 false findings, each mapped to the OWASP NHI Top 10.",
  "metrics": [
   {
-   "label": "seeded findings found",
+   "label": "Seeded findings found",
    "value": "15 of 15"
   },
   {
-   "label": "false findings on the seeded tenant",
+   "label": "False findings on the seeded tenant",
    "value": "0"
   },
   {
-   "label": "single-change mutations caught exactly",
+   "label": "Single-change mutations caught exactly",
    "value": "51 of 51"
   },
   {
-   "label": "code mutants caught by the tests",
+   "label": "Code mutants caught by the tests",
    "value": "99.0%"
   },
   {
-   "label": "synthetic planted findings found",
+   "label": "Synthetic planted findings found",
    "value": "54,961 of 54,961"
   },
   {
-   "label": "run time at 100,000 identities",
+   "label": "Run time at 100,000 identities",
    "value": "6.3 s"
   },
   {
-   "label": "graph requests per service principal",
+   "label": "Graph requests per service principal",
    "value": "3.2"
   },
   {
-   "label": "false findings from one-line rules",
+   "label": "False findings from one-line rules",
    "value": "4,440"
   },
   {
-   "label": "owasp nhi risks with a check",
+   "label": "OWASP NHI risks with a check",
    "value": "9 of 10"
   },
   {
-   "label": "checks",
+   "label": "Read-only checks",
    "value": "14"
   }
  ],
@@ -101,22 +101,22 @@
    "unit": "count",
    "bars": [
     {
-     "label": "found",
+     "label": "Found",
      "value": 15,
      "tone": "good"
     },
     {
-     "label": "missed",
+     "label": "Missed",
      "value": 0,
      "tone": "bad"
     },
     {
-     "label": "false",
+     "label": "False findings",
      "value": 0,
      "tone": "bad"
     },
     {
-     "label": "suppressed by allowlist",
+     "label": "Suppressed by allowlist",
      "value": 5,
      "tone": "neutral"
     }
@@ -127,12 +127,12 @@
    "unit": "%",
    "bars": [
     {
-     "label": "first run",
+     "label": "First run",
      "value": 80.2,
      "tone": "warn"
     },
     {
-     "label": "final run",
+     "label": "Final run",
      "value": 99.0,
      "tone": "good"
     }
@@ -143,17 +143,17 @@
    "unit": "count",
    "bars": [
     {
-     "label": "one-line false",
+     "label": "One-line rule false findings",
      "value": 4440,
      "tone": "bad"
     },
     {
-     "label": "one-line missed",
+     "label": "One-line rule missed findings",
      "value": 218,
      "tone": "warn"
     },
     {
-     "label": "refined errors",
+     "label": "Refined check errors",
      "value": 0,
      "tone": "good"
     }

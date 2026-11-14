@@ -1,0 +1,198 @@
+{
+ "source": "synthetic seeded fixtures, not a live tenant",
+ "seeded": {
+  "issues": 14,
+  "static_issues": 12,
+  "expected_findings": 15,
+  "found": 15,
+  "missed": 0,
+  "false": 0,
+  "static_expected": 13,
+  "static_found": 13,
+  "suppressed": 5,
+  "suppressed_by_reason": {
+   "Approved vendor backup service: security review SR-2291, re-review due 2027-01": 2,
+   "Microsoft first-party app (appOwnerOrganizationId f8cdef31-a31e-4b4a-93e4-5f571e91255a)": 3
+  },
+  "issues_found_alone_exactly": 14
+ },
+ "clean": {
+  "findings": 0,
+  "suppressed": 5,
+  "lookalike_controls": 26
+ },
+ "per_issue": [
+  {
+   "issue": "S01",
+   "static": true,
+   "checks": [
+    "C01"
+   ],
+   "description": "App whose only owner is a disabled (departed) user",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S02",
+   "static": true,
+   "checks": [
+    "C03"
+   ],
+   "description": "Client secret valid for 730 days",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S03",
+   "static": true,
+   "checks": [
+    "C04"
+   ],
+   "description": "Expired client secret left on the app",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S04",
+   "static": true,
+   "checks": [
+    "C05"
+   ],
+   "description": "App-only job signing in with a secret, no certificate",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S05",
+   "static": true,
+   "checks": [
+    "C06"
+   ],
+   "description": "Files.ReadWrite.All application permission",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S06",
+   "static": true,
+   "checks": [
+    "C07"
+   ],
+   "description": "Admin consent for all users to Mail.Read and Files.ReadWrite.All",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S07",
+   "static": true,
+   "checks": [
+    "C08"
+   ],
+   "description": "Service principal holds Privileged Role Administrator",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S08",
+   "static": true,
+   "checks": [
+    "C09"
+   ],
+   "description": "GitHub federated credential trusts every pull request run",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S09",
+   "static": true,
+   "checks": [
+    "C10"
+   ],
+   "description": "Multi-tenant app, unverified publisher, holds User.Read.All",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S10",
+   "static": true,
+   "checks": [
+    "C11"
+   ],
+   "description": "One app trusted by both dev and production pipelines",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S11",
+   "static": true,
+   "checks": [
+    "C12"
+   ],
+   "description": "Excluded from the workload identity Conditional Access policy",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S12",
+   "static": true,
+   "checks": [
+    "C13",
+    "C06"
+   ],
+   "description": "Non-admin user owns an app holding Sites.FullControl.All",
+   "expected": 2,
+   "found": 2,
+   "alone_exact": true
+  },
+  {
+   "issue": "S13",
+   "static": false,
+   "checks": [
+    "C02"
+   ],
+   "description": "Permissioned app with no sign-in for 200 days",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  },
+  {
+   "issue": "S14",
+   "static": false,
+   "checks": [
+    "C14"
+   ],
+   "description": "Service account used for an interactive browser sign-in",
+   "expected": 1,
+   "found": 1,
+   "alone_exact": true
+  }
+ ],
+ "severity": {
+  "critical": 2,
+  "high": 3,
+  "medium": 7,
+  "low": 3,
+  "info": 0
+ },
+ "checks": 14,
+ "mutations": {
+  "count": 42,
+  "exact": 42,
+  "expected": 65,
+  "found": 65,
+  "missed": 0,
+  "false": 0,
+  "checks_covered": 14
+ }
+}

@@ -1,0 +1,528 @@
+{
+ "meta": {
+  "collected_at": "2026-11-01T00:00:00Z",
+  "source": "synthetic fixture",
+  "api_versions": {
+   "servicePrincipalSignInActivities": "beta",
+   "federatedIdentityCredentials": "beta",
+   "default": "v1.0"
+  },
+  "skipped_checks": {},
+  "findings": 15,
+  "suppressed": 5
+ },
+ "findings": [
+  {
+   "check_id": "C01",
+   "rule": "only_disabled_or_nonhuman_owners",
+   "nhi_risk": [
+    "NHI1"
+   ],
+   "object_id": "1703235f-b665-5109-b8a2-1dd25b227262",
+   "object_type": "application",
+   "display_name": "reporting-export",
+   "severity": "medium",
+   "evidence": {
+    "owners": [
+     {
+      "id": "bec5df5a-f42d-53e0-a24b-762597740358",
+      "type": "#microsoft.graph.user",
+      "accountEnabled": false
+     }
+    ],
+    "serviceManagementReference": null
+   },
+   "why_it_matters": "Nobody is accountable for this app: no one will rotate its credentials, review its permissions or retire it, and a forgotten app keeps working for whoever holds its credentials.",
+   "how_to_verify_manually": "Entra admin center > App registrations > All applications > app > Owners; GET /v1.0/applications/1703235f-b665-5109-b8a2-1dd25b227262/owners",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C02",
+   "rule": "no_sign_in",
+   "nhi_risk": [
+    "NHI1"
+   ],
+   "object_id": "30047f65-e34d-5b99-be6b-7a7e772b1dd0",
+   "object_type": "servicePrincipal",
+   "display_name": "Microsoft Azure CLI",
+   "severity": "medium",
+   "evidence": {
+    "lastSignInDateTime": null,
+    "days_threshold": 90,
+    "appRoleAssignments": 0,
+    "directoryRoles": 0
+   },
+   "why_it_matters": "Permissions nobody uses are pure exposure: the identity can still be signed in as, but nothing would break if it were disabled.",
+   "how_to_verify_manually": "Entra admin center > Monitoring > Usage & insights > Service principal sign-in activity; GET /beta/reports/servicePrincipalSignInActivities?$filter=appId eq '04b07795-8ddb-461a-bbee-02f9e1bf7b46'",
+   "identity_type": "Microsoft first-party",
+   "suppressed": "Microsoft first-party app (appOwnerOrganizationId f8cdef31-a31e-4b4a-93e4-5f571e91255a)",
+   "extra": {}
+  },
+  {
+   "check_id": "C02",
+   "rule": "stale_sign_in",
+   "nhi_risk": [
+    "NHI1"
+   ],
+   "object_id": "e8363b95-3036-5f64-a3a5-9983c7062cca",
+   "object_type": "servicePrincipal",
+   "display_name": "survey-importer",
+   "severity": "medium",
+   "evidence": {
+    "lastSignInDateTime": "2026-04-15T00:00:00+00:00",
+    "days_threshold": 90,
+    "appRoleAssignments": 1,
+    "directoryRoles": 0
+   },
+   "why_it_matters": "Permissions nobody uses are pure exposure: the identity can still be signed in as, but nothing would break if it were disabled.",
+   "how_to_verify_manually": "Entra admin center > Monitoring > Usage & insights > Service principal sign-in activity; GET /beta/reports/servicePrincipalSignInActivities?$filter=appId eq '61ae76dd-1d42-5deb-8be5-063057b1cacc'",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C03",
+   "rule": "lifetime_over_limit",
+   "nhi_risk": [
+    "NHI7"
+   ],
+   "object_id": "f9f8da14-8c1a-50ac-9905-ad2a8afc2a44",
+   "object_type": "application",
+   "display_name": "legacy-crm-connector",
+   "severity": "low",
+   "evidence": {
+    "keyId": "9b6302e6-7d46-5ec4-826d-df870b2a84fd",
+    "startDateTime": "2026-07-24T00:00:00Z",
+    "endDateTime": "2028-07-23T00:00:00Z",
+    "lifetime_days": 730.0,
+    "limit_days": 180,
+    "on": "application"
+   },
+   "why_it_matters": "A secret that stays valid for years gives anyone who copies it years of access; short lifetimes force rotation and limit the damage of a leak.",
+   "how_to_verify_manually": "Entra admin center > App registrations > app > Certificates & secrets; GET /v1.0/applications/f9f8da14-8c1a-50ac-9905-ad2a8afc2a44?$select=passwordCredentials",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {
+    "keyId": "9b6302e6-7d46-5ec4-826d-df870b2a84fd"
+   }
+  },
+  {
+   "check_id": "C04",
+   "rule": "expired_present",
+   "nhi_risk": [
+    "NHI7"
+   ],
+   "object_id": "94aa3869-1477-524a-a0f3-93ee8ce2d30f",
+   "object_type": "application",
+   "display_name": "old-billing-api",
+   "severity": "low",
+   "evidence": {
+    "expired": [
+     {
+      "type": "password",
+      "keyId": "8e011058-a7d7-5a67-ac25-11bf979fa14f",
+      "endDateTime": "2026-10-02T00:00:00Z"
+     }
+    ]
+   },
+   "why_it_matters": "Expired credentials left in place show nobody is managing this identity's lifecycle and hide which credential is really in use.",
+   "how_to_verify_manually": "Entra admin center > App registrations > app > Certificates & secrets; GET /v1.0/applications/94aa3869-1477-524a-a0f3-93ee8ce2d30f?$select=passwordCredentials,keyCredentials",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C05",
+   "rule": "secret_only",
+   "nhi_risk": [
+    "NHI4"
+   ],
+   "object_id": "5b21188f-e267-5ab5-80e2-6340c00adcbc",
+   "object_type": "application",
+   "display_name": "nightly-report-job",
+   "severity": "medium",
+   "evidence": {
+    "active_secrets": 1,
+    "active_certificates": 0,
+    "federated_credentials": 0,
+    "application_permissions": 1,
+    "directory_roles": 0
+   },
+   "why_it_matters": "A client secret is a shared password that can be pasted anywhere; a certificate key can be kept non-exportable, and federation removes the stored credential altogether.",
+   "how_to_verify_manually": "Entra admin center > App registrations > app > Certificates & secrets (Client secrets, Certificates, Federated credentials tabs); GET /v1.0/applications/5b21188f-e267-5ab5-80e2-6340c00adcbc/federatedIdentityCredentials",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C06",
+   "rule": "data_graph_permission",
+   "nhi_risk": [
+    "NHI5"
+   ],
+   "object_id": "015e3144-feb9-5da1-9475-2902d8301dac",
+   "object_type": "servicePrincipal",
+   "display_name": "doc-archiver",
+   "severity": "high",
+   "evidence": {
+    "permissions": [
+     "Files.ReadWrite.All"
+    ],
+    "tier0": []
+   },
+   "why_it_matters": "This identity can read or change every user's data of that kind, with no user present and no MFA.",
+   "how_to_verify_manually": "Entra admin center > Enterprise applications > app > Permissions (Admin consent tab); GET /v1.0/servicePrincipals/015e3144-feb9-5da1-9475-2902d8301dac/appRoleAssignments",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C06",
+   "rule": "data_graph_permission",
+   "nhi_risk": [
+    "NHI5"
+   ],
+   "object_id": "5cbd28f9-ba4d-5e7a-a9ff-c3207383caf3",
+   "object_type": "servicePrincipal",
+   "display_name": "sharepoint-migrator",
+   "severity": "high",
+   "evidence": {
+    "permissions": [
+     "Sites.FullControl.All"
+    ],
+    "tier0": []
+   },
+   "why_it_matters": "This identity can read or change every user's data of that kind, with no user present and no MFA.",
+   "how_to_verify_manually": "Entra admin center > Enterprise applications > app > Permissions (Admin consent tab); GET /v1.0/servicePrincipals/5cbd28f9-ba4d-5e7a-a9ff-c3207383caf3/appRoleAssignments",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C06",
+   "rule": "data_graph_permission",
+   "nhi_risk": [
+    "NHI5"
+   ],
+   "object_id": "9d3ba121-c619-5d45-9cbc-73c9ca541ab0",
+   "object_type": "servicePrincipal",
+   "display_name": "BackupVault Cloud",
+   "severity": "high",
+   "evidence": {
+    "permissions": [
+     "Mail.Read"
+    ],
+    "tier0": []
+   },
+   "why_it_matters": "This identity can read or change every user's data of that kind, with no user present and no MFA.",
+   "how_to_verify_manually": "Entra admin center > Enterprise applications > app > Permissions (Admin consent tab); GET /v1.0/servicePrincipals/9d3ba121-c619-5d45-9cbc-73c9ca541ab0/appRoleAssignments",
+   "identity_type": "app (other tenant)",
+   "suppressed": "Approved vendor backup service: security review SR-2291, re-review due 2027-01",
+   "extra": {}
+  },
+  {
+   "check_id": "C07",
+   "rule": "all_principals_sensitive_scope",
+   "nhi_risk": [
+    "NHI5"
+   ],
+   "object_id": "30047f65-e34d-5b99-be6b-7a7e772b1dd0",
+   "object_type": "servicePrincipal",
+   "display_name": "Microsoft Azure CLI",
+   "severity": "high",
+   "evidence": {
+    "grantId": "6biaf9OPUFYhepLs80nifzaUc-iaYKDJf9lCs3oD6ik=",
+    "consentType": "AllPrincipals",
+    "sensitive_scopes": [
+     "Directory.AccessAsUser.All"
+    ],
+    "scope": "openid profile offline_access User.Read Directory.AccessAsUser.All"
+   },
+   "why_it_matters": "Consent for all users lets this app act as any user who signs in to it, over that user's mail, files or directory data, without each user being asked.",
+   "how_to_verify_manually": "Entra admin center > Enterprise applications > app > Permissions (Admin consent tab); GET /v1.0/oauth2PermissionGrants?$filter=clientId eq '30047f65-e34d-5b99-be6b-7a7e772b1dd0'",
+   "identity_type": "Microsoft first-party",
+   "suppressed": "Microsoft first-party app (appOwnerOrganizationId f8cdef31-a31e-4b4a-93e4-5f571e91255a)",
+   "extra": {}
+  },
+  {
+   "check_id": "C07",
+   "rule": "all_principals_sensitive_scope",
+   "nhi_risk": [
+    "NHI5"
+   ],
+   "object_id": "f1a1ef19-4045-5101-bd9b-94c20d222d9c",
+   "object_type": "servicePrincipal",
+   "display_name": "MailMerge Pro",
+   "severity": "high",
+   "evidence": {
+    "grantId": "gjInqhqGYR7cU719YbfoJpZzhlTePC32Cwp3qI5TweE=",
+    "consentType": "AllPrincipals",
+    "sensitive_scopes": [
+     "Files.ReadWrite.All",
+     "Mail.Read"
+    ],
+    "scope": "openid profile User.Read Mail.Read Files.ReadWrite.All"
+   },
+   "why_it_matters": "Consent for all users lets this app act as any user who signs in to it, over that user's mail, files or directory data, without each user being asked.",
+   "how_to_verify_manually": "Entra admin center > Enterprise applications > app > Permissions (Admin consent tab); GET /v1.0/oauth2PermissionGrants?$filter=clientId eq 'f1a1ef19-4045-5101-bd9b-94c20d222d9c'",
+   "identity_type": "app (other tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C08",
+   "rule": "privileged_directory_role",
+   "nhi_risk": [
+    "NHI5"
+   ],
+   "object_id": "45f6b237-501d-5c1d-953c-d5f09f02ea29",
+   "object_type": "servicePrincipal",
+   "display_name": "identity-automation",
+   "severity": "critical",
+   "evidence": {
+    "roles": [
+     "Privileged Role Administrator"
+    ],
+    "assignments": [
+     {
+      "id": "O3ZOzxyYJeOBKhJbJ7oM0OsWN6WvJIxvlhTiSWwiEW0=",
+      "role": "Privileged Role Administrator",
+      "directoryScopeId": "/"
+     }
+    ]
+   },
+   "why_it_matters": "A workload signing in with this role has administrator power over the directory, and service principals cannot do MFA, so the role is only as safe as the app's credentials.",
+   "how_to_verify_manually": "Entra admin center > Roles & admins > role > Assignments; GET /v1.0/roleManagement/directory/roleAssignments?$filter=principalId eq '45f6b237-501d-5c1d-953c-d5f09f02ea29'",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C09",
+   "rule": "github_pull_request",
+   "nhi_risk": [
+    "NHI6"
+   ],
+   "object_id": "2c339056-3f55-5d2a-9e74-5def96e73917",
+   "object_type": "application",
+   "display_name": "infra-deployer",
+   "severity": "medium",
+   "evidence": {
+    "credential": "gh-infra",
+    "issuer": "https://token.actions.githubusercontent.com",
+    "subject": "repo:lab-org/infra:pull_request",
+    "claimsMatchingExpression": null,
+    "audiences": [
+     "api://AzureADTokenExchange"
+    ],
+    "reason": "trusts any workflow run for a pull request in this repository, before review"
+   },
+   "why_it_matters": "A federated credential lets an outside workload sign in as this app with no secret; the subject is the only thing that decides which workload, so a loose subject hands the app's permissions to more code than intended.",
+   "how_to_verify_manually": "Entra admin center > App registrations > app > Certificates & secrets > Federated credentials; GET /beta/applications/2c339056-3f55-5d2a-9e74-5def96e73917/federatedIdentityCredentials",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {
+    "credential": "gh-infra"
+   }
+  },
+  {
+   "check_id": "C10",
+   "rule": "unverified_publisher_with_access",
+   "nhi_risk": [
+    "NHI3"
+   ],
+   "object_id": "30047f65-e34d-5b99-be6b-7a7e772b1dd0",
+   "object_type": "servicePrincipal",
+   "display_name": "Microsoft Azure CLI",
+   "severity": "medium",
+   "evidence": {
+    "appOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "verifiedPublisher": {
+     "displayName": "Microsoft Corporation",
+     "verifiedPublisherId": null,
+     "addedDateTime": null
+    },
+    "application_permissions": [],
+    "tenant_wide_delegated_scopes": [
+     "Directory.AccessAsUser.All"
+    ]
+   },
+   "why_it_matters": "Another organisation controls this app's code and credentials, and Microsoft has not verified who they are; if they are breached, their access to your tenant goes with it.",
+   "how_to_verify_manually": "Entra admin center > Enterprise applications > app > Properties (Publisher) and Permissions; GET /v1.0/servicePrincipals/30047f65-e34d-5b99-be6b-7a7e772b1dd0?$select=appOwnerOrganizationId,verifiedPublisher",
+   "identity_type": "Microsoft first-party",
+   "suppressed": "Microsoft first-party app (appOwnerOrganizationId f8cdef31-a31e-4b4a-93e4-5f571e91255a)",
+   "extra": {}
+  },
+  {
+   "check_id": "C10",
+   "rule": "unverified_publisher_with_access",
+   "nhi_risk": [
+    "NHI3"
+   ],
+   "object_id": "03d968df-7ea7-5aba-bec6-4bef81060828",
+   "object_type": "servicePrincipal",
+   "display_name": "QuickSurvey",
+   "severity": "medium",
+   "evidence": {
+    "appOwnerOrganizationId": "78e334d4-e8e7-52f0-843b-98b326ad816c",
+    "verifiedPublisher": {
+     "displayName": null,
+     "verifiedPublisherId": null,
+     "addedDateTime": null
+    },
+    "application_permissions": [
+     "User.Read.All"
+    ],
+    "tenant_wide_delegated_scopes": []
+   },
+   "why_it_matters": "Another organisation controls this app's code and credentials, and Microsoft has not verified who they are; if they are breached, their access to your tenant goes with it.",
+   "how_to_verify_manually": "Entra admin center > Enterprise applications > app > Properties (Publisher) and Permissions; GET /v1.0/servicePrincipals/03d968df-7ea7-5aba-bec6-4bef81060828?$select=appOwnerOrganizationId,verifiedPublisher",
+   "identity_type": "app (other tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C10",
+   "rule": "unverified_publisher_with_access",
+   "nhi_risk": [
+    "NHI3"
+   ],
+   "object_id": "9d3ba121-c619-5d45-9cbc-73c9ca541ab0",
+   "object_type": "servicePrincipal",
+   "display_name": "BackupVault Cloud",
+   "severity": "high",
+   "evidence": {
+    "appOwnerOrganizationId": "0b32d974-a7d5-547d-9dd9-4c34f938f3aa",
+    "verifiedPublisher": {
+     "displayName": null,
+     "verifiedPublisherId": null,
+     "addedDateTime": null
+    },
+    "application_permissions": [
+     "Mail.Read"
+    ],
+    "tenant_wide_delegated_scopes": []
+   },
+   "why_it_matters": "Another organisation controls this app's code and credentials, and Microsoft has not verified who they are; if they are breached, their access to your tenant goes with it.",
+   "how_to_verify_manually": "Entra admin center > Enterprise applications > app > Properties (Publisher) and Permissions; GET /v1.0/servicePrincipals/9d3ba121-c619-5d45-9cbc-73c9ca541ab0?$select=appOwnerOrganizationId,verifiedPublisher",
+   "identity_type": "app (other tenant)",
+   "suppressed": "Approved vendor backup service: security review SR-2291, re-review due 2027-01",
+   "extra": {}
+  },
+  {
+   "check_id": "C11",
+   "rule": "prod_and_nonprod",
+   "nhi_risk": [
+    "NHI8"
+   ],
+   "object_id": "64e9ec4d-d1ff-5047-bbd7-6b933de7f2a2",
+   "object_type": "application",
+   "display_name": "orders-api-ci",
+   "severity": "medium",
+   "evidence": {
+    "prod": [
+     "repo:lab-org/orders:environment:production"
+    ],
+    "nonprod": [
+     "repo:lab-org/orders:environment:dev"
+    ],
+    "review": true
+   },
+   "why_it_matters": "If the same identity serves test and production, a compromise of the weaker test pipeline or host reaches production data.",
+   "how_to_verify_manually": "Entra admin center > App registrations > app > Authentication and Certificates & secrets > Federated credentials; GET /v1.0/applications/64e9ec4d-d1ff-5047-bbd7-6b933de7f2a2?$select=web,identifierUris",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C12",
+   "rule": "not_in_enforced_policy",
+   "nhi_risk": [
+    "NHI4"
+   ],
+   "object_id": "e68b661c-0e21-51cf-ac0e-bcb286150d55",
+   "object_type": "servicePrincipal",
+   "display_name": "payroll-export",
+   "severity": "low",
+   "evidence": {
+    "enforced_policies": 1
+   },
+   "why_it_matters": "Without a workload identity policy a stolen credential works from any network; a location or risk policy is the control that limits where the app can sign in from.",
+   "how_to_verify_manually": "Entra admin center > Conditional Access > Policies (Assignments > Workload identities); GET /v1.0/identity/conditionalAccess/policies",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C13",
+   "rule": "path_from_non_privileged",
+   "nhi_risk": [
+    "NHI5"
+   ],
+   "object_id": "5cbd28f9-ba4d-5e7a-a9ff-c3207383caf3",
+   "object_type": "servicePrincipal",
+   "display_name": "sharepoint-migrator",
+   "severity": "critical",
+   "evidence": {
+    "principals_with_path": 1,
+    "shortest_hops": 2,
+    "paths": [
+     {
+      "source": "user Bob Builder",
+      "hops": 2,
+      "steps": [
+       {
+        "from": "user Bob Builder",
+        "to": "app sharepoint-migrator",
+        "edge": "owner of the application",
+        "kind": "owns_app"
+       },
+       {
+        "from": "app sharepoint-migrator",
+        "to": "sp sharepoint-migrator",
+        "edge": "credentials on the app sign in as its service principal",
+        "kind": "app_to_sp"
+       }
+      ],
+      "closing_control": "Remove this owner; record accountability in serviceManagementReference instead"
+     }
+    ]
+   },
+   "why_it_matters": "Whoever can add a credential to a privileged service principal can sign in as it and use all of its permissions, so these people and apps are as privileged as the identity itself.",
+   "how_to_verify_manually": "For each step: Entra admin center > App registrations > app > Owners; Roles & admins > role > Assignments; Groups > group > Members/Owners. Graph: GET /v1.0/applications/{id}/owners, GET /v1.0/roleManagement/directory/roleAssignments",
+   "identity_type": "app (this tenant)",
+   "suppressed": null,
+   "extra": {}
+  },
+  {
+   "check_id": "C14",
+   "rule": "interactive_service_account",
+   "nhi_risk": [
+    "NHI10"
+   ],
+   "object_id": "22dc1af0-e8f2-5559-946d-80e49575ac1c",
+   "object_type": "user",
+   "display_name": "svc-backup",
+   "severity": "medium",
+   "evidence": {
+    "userPrincipalName": "svc-backup@lab.example",
+    "interactive_sign_ins": 1,
+    "apps": [
+     "Azure Portal"
+    ],
+    "clientAppUsed": [
+     "Browser"
+    ],
+    "first": "2026-10-28T00:00:00Z",
+    "last": "2026-10-28T00:00:00Z"
+   },
+   "why_it_matters": "When a person signs in as a service account, its actions can no longer be told apart from the automation's, and the account's standing access becomes that person's.",
+   "how_to_verify_manually": "Entra admin center > Monitoring > Sign-in logs (filter: user, Interactive); GET /v1.0/auditLogs/signIns?$filter=userId eq '22dc1af0-e8f2-5559-946d-80e49575ac1c'",
+   "identity_type": "user",
+   "suppressed": null,
+   "extra": {}
+  }
+ ]
+}

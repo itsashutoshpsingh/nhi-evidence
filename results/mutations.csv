@@ -1,0 +1,43 @@
+mutation,target_check,description,expected,found,missed,false,checks_fired,exact
+M01a,C01,remove every owner of an app,1,1,0,0,C01,True
+M01b,C01,only owner is a service principal,1,1,0,0,C01,True
+M01c,C01,remove serviceManagementReference from an ownerless app,1,1,0,0,C01,True
+M01d,C01,agent identity loses its sponsor,1,1,0,0,C01,True
+M02a,C02,last sign-in 91 days ago,1,1,0,0,C02,True
+M02b,C02,no sign-in activity record,1,1,0,0,C02,True
+M02c,C02,app created 120 days ago and never used,1,1,0,0,C02,True
+M03a,C03,secret lifetime 181 days,1,1,0,0,C03,True
+M03b,C03,secret with no end date,1,1,0,0,C03,True
+M03c,C03,365-day secret on the service principal object (hidden from App registrations),1,1,0,0,C03,True
+M04a,C04,expired certificate left in place,1,1,0,0,C04,True
+M04b,C04,second active secret after a rotation,1,1,0,0,C04,True
+M04c,C04,expired secret on the service principal object,1,1,0,0,C04,True
+M05a,C05,certificate replaced by a secret,1,1,0,0,C05,True
+M05b,C05,role-holding app switches to a secret,1,1,0,0,C05,True
+M05c,C05,"certificate expired, secret active",2,2,0,0,C04 C05,True
+M06a,C06,Mail.Send application permission,2,2,0,0,C06 C13,True
+M06b,C06,Application.ReadWrite.All on an ownerless app,1,1,0,0,C06,True
+M06c,C06,"RoleManagement.ReadWrite.Directory, resolved from the reference table",3,3,0,0,C06 C13,True
+M07a,C07,all-user consent gains Files.Read.All,1,1,0,0,C07,True
+M07b,C07,single-user Mail.Read consent becomes all-user consent,1,1,0,0,C07,True
+M08a,C08,Global Administrator to a service principal,1,1,0,0,C08,True
+M08b,C08,Cloud Application Administrator scoped to one app,1,1,0,0,C08,True
+M08c,C08,Security Reader (Microsoft labels it privileged),1,1,0,0,C08,True
+M09a,C09,flexible credential with a wildcard repository,1,1,0,0,C09,True
+M09b,C09,flexible credential trusting any branch,1,1,0,0,C09,True
+M09c,C09,issuer that is not a known workload platform,1,1,0,0,C09,True
+M09d,C09,Kubernetes default service account,1,1,0,0,C09,True
+M09e,C09,literal asterisk in a standard subject,2,2,0,0,C09,True
+M09f,C09,'pull-request' spelling copied from Microsoft's docs,1,1,0,0,C09,True
+M09g,C09,audience other than api://AzureADTokenExchange,1,1,0,0,C09,True
+M10a,C10,verified publisher removed,1,1,0,0,C10,True
+M10b,C10,unverified app gets all-user consent beyond sign-in,1,1,0,0,C10,True
+M11a,C11,dev app gains a production redirect URI,1,1,0,0,C11,True
+M11b,C11,second repository trusted by the same app,1,1,0,0,C11,True
+M12a,C12,workload policy switched to report-only,12,12,0,0,C12,True
+M12b,C12,one app excluded from the policy,1,1,0,0,C12,True
+M13a,C13,non-admin becomes owner of an app with Files.ReadWrite.All,2,2,0,0,C06 C13,True
+M13b,C13,non-admin becomes owner of a role-assignable admin group,3,3,0,0,C06 C13,True
+M13c,C13,app owned by a non-admin gets Application.ReadWrite.All (reaches every privileged app),5,5,0,0,C06 C13,True
+M14a,C14,service account signs in interactively,1,1,0,0,C14,True
+M14b,C14,automation account by naming pattern,1,1,0,0,C14,True

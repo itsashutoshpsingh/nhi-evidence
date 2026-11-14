@@ -1,0 +1,8 @@
+# Secret scanning before every commit. The baseline lists the reviewed high-entropy strings in the
+# fixtures: synthetic object IDs, certificate thumbprints and pinned commit hashes, none of them secrets.
+repos:
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ["--baseline", ".secrets.baseline", "--exclude-files", "uv\\.lock"]

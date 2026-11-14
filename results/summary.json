@@ -1,6 +1,6 @@
 {
  "project": "nhi-evidence",
- "headline": "On a seeded test tenant built from Graph-shaped fixtures (not a live tenant), the read-only checks found all 15 planted findings from 14 misconfigurations with 0 false findings, each mapped to the OWASP NHI Top 10.",
+ "headline": "On a seeded test tenant built from fixtures shaped like Microsoft Graph data (not a live tenant), 14 read only checks found all 15 planted findings from 14 misconfigurations with 0 false findings, each mapped to the OWASP NHI Top 10.",
  "metrics": [
   {
    "label": "seeded findings found",

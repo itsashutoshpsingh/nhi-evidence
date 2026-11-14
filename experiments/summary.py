@@ -38,9 +38,9 @@ def main():
     kill1 = 100 * cm1["killed"] / cm1["mutants"]
     summary = {
         "project": "nhi-evidence",
-        "headline": (f"On a seeded test tenant built from Graph-shaped fixtures (not a live tenant), the read-only "
-                     f"checks found all {s['found']} planted findings from {s['issues']} misconfigurations with "
-                     f"{s['false']} false findings, each mapped to the OWASP NHI Top 10."),
+        "headline": (f"On a seeded test tenant built from fixtures shaped like Microsoft Graph data (not a live tenant), "
+                     f"14 read only checks found all {s['found']} planted findings from {s['issues']} misconfigurations "
+                     f"with {s['false']} false findings, each mapped to the OWASP NHI Top 10."),
         "metrics": [
             {"label": "seeded findings found", "value": f"{s['found']} of {s['expected_findings']}"},
             {"label": "false findings on the seeded tenant", "value": str(s["false"])},

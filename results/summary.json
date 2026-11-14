@@ -24,7 +24,7 @@
   },
   {
    "label": "run time at 100,000 identities",
-   "value": "6.1 s"
+   "value": "6.3 s"
   },
   {
    "label": "graph requests per service principal",

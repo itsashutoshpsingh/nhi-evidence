@@ -12,7 +12,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+sys.path.append(str(ROOT / "src"))
 from nhi_evidence import refs  # noqa: E402
 from nhi_evidence.fixturekit import Tenant  # noqa: E402
 

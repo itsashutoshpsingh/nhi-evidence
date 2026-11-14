@@ -1,0 +1,213 @@
+file,line,mutation,status,reason
+src/nhi_evidence/checks/c01_ownerless.py,52,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,22,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,23,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,39,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,40,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,42,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,13,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,25,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,39,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c01_ownerless.py,39,Is -> IsNot,killed,AssertionError: mutation M01d
+src/nhi_evidence/checks/c01_ownerless.py,13,Eq -> NotEq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,51,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,17,Is -> IsNot,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,25,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,26,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,27,Or -> And,killed,KeyError: 'appId'
+src/nhi_evidence/checks/c02_unused.py,28,continue -> pass,killed,KeyError: 'appId'
+src/nhi_evidence/checks/c02_unused.py,31,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,32,continue -> pass,survived,
+src/nhi_evidence/checks/c02_unused.py,35,And -> Or,killed,TypeError: '>' not supported between instances of 'NoneType' and 'datetime.datetime'
+src/nhi_evidence/checks/c02_unused.py,36,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,38,And -> Or,killed,TypeError: '>=' not supported between instances of 'NoneType' and 'datetime.datetime'
+src/nhi_evidence/checks/c02_unused.py,39,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,27,Eq -> NotEq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,27,drop not,killed,KeyError: 'appId'
+src/nhi_evidence/checks/c02_unused.py,29,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,35,Gt -> GtE,survived,
+src/nhi_evidence/checks/c02_unused.py,38,IsNot -> Is,killed,TypeError: '>=' not supported between instances of 'NoneType' and 'datetime.datetime'
+src/nhi_evidence/checks/c02_unused.py,38,GtE -> Gt,survived,
+src/nhi_evidence/checks/c02_unused.py,21,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c02_unused.py,41,Is -> IsNot,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,46,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,26,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,27,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,30,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,31,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,29,Or -> And,killed,TypeError: unsupported operand type(s) for -: 'NoneType' and 'datetime.datetime'
+src/nhi_evidence/checks/c03_long_lived.py,30,IsNot -> Is,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,30,LtE -> Lt,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,29,Is -> IsNot,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,29,Is -> IsNot,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,29,86400 -> 86401,survived,
+src/nhi_evidence/checks/c03_long_lived.py,33,Is -> IsNot,killed,AssertionError: seeded
+src/nhi_evidence/checks/c03_long_lived.py,41,Eq -> NotEq,survived,
+src/nhi_evidence/checks/c03_long_lived.py,36,Is -> IsNot,killed,TypeError: type NoneType doesn't define __round__ method
+src/nhi_evidence/checks/c04_credential_hygiene.py,48,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c04_credential_hygiene.py,17,NotEq -> Eq,killed,AssertionError: mutation M04c
+src/nhi_evidence/checks/c04_credential_hygiene.py,39,Gt -> GtE,killed,AssertionError: seeded
+src/nhi_evidence/checks/c04_credential_hygiene.py,25,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,42,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,17,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,18,continue -> pass,survived,
+src/nhi_evidence/checks/c05_secret_not_cert.py,21,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,22,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,23,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,28,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,29,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,28,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,25,And -> Or,survived,
+src/nhi_evidence/checks/c05_secret_not_cert.py,26,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,25,Eq -> NotEq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c05_secret_not_cert.py,26,Eq -> NotEq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c06_high_priv_app_perms.py,29,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c06_high_priv_app_perms.py,16,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c06_high_priv_app_perms.py,17,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c06_high_priv_app_perms.py,18,Eq -> NotEq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,37,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,17,NotEq -> Eq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,18,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,21,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,22,continue -> pass,survived,
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,23,Or -> And,survived,
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,24,continue -> pass,survived,
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,26,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,27,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,23,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,23,NotEq -> Eq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c07_tenant_wide_consent.py,25,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c08_privileged_role.py,32,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c08_privileged_role.py,17,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c08_privileged_role.py,18,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c08_privileged_role.py,20,Eq -> NotEq,survived,
+src/nhi_evidence/checks/c08_privileged_role.py,21,In -> NotIn,survived,
+src/nhi_evidence/checks/c09_loose_federation.py,55,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,77,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,26,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,29,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,31,NotEq -> Eq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,33,IsNot -> Is,killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,34,Or -> And,killed,AssertionError: mutation M09e
+src/nhi_evidence/checks/c09_loose_federation.py,46,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,49,Or -> And,killed,"TypeError: expected string or bytes-like object, got 'NoneType'"
+src/nhi_evidence/checks/c09_loose_federation.py,28,Or -> And,killed,AttributeError: 'NoneType' object has no attribute 'get'
+src/nhi_evidence/checks/c09_loose_federation.py,34,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,34,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,50,And -> Or,survived,
+src/nhi_evidence/checks/c09_loose_federation.py,50,GtE -> Gt,survived,
+src/nhi_evidence/checks/c09_loose_federation.py,51,In -> NotIn,killed,AssertionError: mutation M09b
+src/nhi_evidence/checks/c09_loose_federation.py,44,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c09_loose_federation.py,53,In -> NotIn,survived,
+src/nhi_evidence/checks/c10_unverified_third_party.py,38,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,18,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,19,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,21,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,25,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,26,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,18,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,25,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,25,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,25,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,20,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c10_unverified_third_party.py,23,Eq -> NotEq,killed,AssertionError: mutation M10b
+src/nhi_evidence/checks/c10_unverified_third_party.py,24,Or -> And,killed,AssertionError: mutation M10b
+src/nhi_evidence/checks/c11_environment_reuse.py,68,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c11_environment_reuse.py,27,Or -> And,killed,"TypeError: expected string or bytes-like object, got 'NoneType'"
+src/nhi_evidence/checks/c11_environment_reuse.py,51,Eq -> NotEq,killed,KeyError: 'prod'
+src/nhi_evidence/checks/c11_environment_reuse.py,60,Gt -> GtE,killed,AssertionError: seeded
+src/nhi_evidence/checks/c11_environment_reuse.py,51,2 -> 3,killed,AssertionError: seeded
+src/nhi_evidence/checks/c11_environment_reuse.py,46,Or -> And,survived,
+src/nhi_evidence/checks/c11_environment_reuse.py,32,2 -> 3,killed,IndexError: no such group
+src/nhi_evidence/checks/c11_environment_reuse.py,41,2 -> 3,survived,
+src/nhi_evidence/checks/c11_environment_reuse.py,45,Or -> And,killed,AssertionError: mutation M11a
+src/nhi_evidence/checks/c11_environment_reuse.py,41,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,55,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,16,NotEq -> Eq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,17,continue -> pass,killed,AssertionError: mutation M12a
+src/nhi_evidence/checks/c12_no_workload_ca.py,18,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,32,Or -> And,survived,
+src/nhi_evidence/checks/c12_no_workload_ca.py,33,continue -> pass,killed,AssertionError: mutation M12a
+src/nhi_evidence/checks/c12_no_workload_ca.py,34,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,35,continue -> pass,killed,AssertionError: mutation M12a
+src/nhi_evidence/checks/c12_no_workload_ca.py,37,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,38,continue -> pass,survived,
+src/nhi_evidence/checks/c12_no_workload_ca.py,39,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,40,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,41,Or -> And,killed,AssertionError: mutation M12a
+src/nhi_evidence/checks/c12_no_workload_ca.py,42,continue -> pass,killed,AssertionError: mutation M12a
+src/nhi_evidence/checks/c12_no_workload_ca.py,43,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,44,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,45,continue -> pass,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,21,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,22,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,32,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,32,NotEq -> Eq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,37,NotIn -> In,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,41,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,41,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,43,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,43,NotIn -> In,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,43,In -> NotIn,killed,AssertionError: mutation M12a
+src/nhi_evidence/checks/c12_no_workload_ca.py,43,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,18,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c12_no_workload_ca.py,49,Eq -> NotEq,survived,
+src/nhi_evidence/checks/c13_credential_paths.py,31,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c13_credential_paths.py,23,LtE -> Lt,survived,
+src/nhi_evidence/checks/c13_credential_paths.py,23,2 -> 3,survived,
+src/nhi_evidence/checks/c14_human_use.py,42,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/checks/c14_human_use.py,16,Is -> IsNot,killed,AssertionError: seeded
+src/nhi_evidence/checks/c14_human_use.py,22,Or -> And,killed,AssertionError: clean
+src/nhi_evidence/checks/c14_human_use.py,23,continue -> pass,killed,AssertionError: clean
+src/nhi_evidence/checks/c14_human_use.py,24,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c14_human_use.py,25,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/checks/c14_human_use.py,22,drop not,killed,AssertionError: seeded
+src/nhi_evidence/checks/c14_human_use.py,22,NotEq -> Eq,killed,AssertionError: seeded
+src/nhi_evidence/checks/c14_human_use.py,25,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/checks/c14_human_use.py,32,Or -> And,survived,
+src/nhi_evidence/checks/c14_human_use.py,22,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/finding.py,44,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/finding.py,54,NotIn -> In,killed,KeyError: '2d37c462-4e60-533d-870a-21c7568ab46e'
+src/nhi_evidence/finding.py,40,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/finding.py,61,And -> Or,survived,
+src/nhi_evidence/finding.py,42,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/finding.py,55,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,136,return out -> return [],killed,AssertionError: seeded
+src/nhi_evidence/graph.py,174,return out -> return [],killed,AttributeError: 'list' object has no attribute 'items'
+src/nhi_evidence/graph.py,144,10 -> 11,survived,
+src/nhi_evidence/graph.py,46,And -> Or,survived,
+src/nhi_evidence/graph.py,48,And -> Or,survived,
+src/nhi_evidence/graph.py,53,drop not,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,72,drop not,killed,AssertionError: mutation M06c
+src/nhi_evidence/graph.py,78,In -> NotIn,killed,AssertionError: mutation M06c
+src/nhi_evidence/graph.py,97,In -> NotIn,killed,AssertionError: mutation M13b
+src/nhi_evidence/graph.py,107,Eq -> NotEq,killed,AssertionError: mutation M13b
+src/nhi_evidence/graph.py,128,drop not,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,129,continue -> pass,survived,
+src/nhi_evidence/graph.py,131,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,147,IsNot -> Is,survived,
+src/nhi_evidence/graph.py,153,NotIn -> In,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,154,continue -> pass,survived,
+src/nhi_evidence/graph.py,182,Eq -> NotEq,survived,
+src/nhi_evidence/graph.py,184,Eq -> NotEq,survived,
+src/nhi_evidence/graph.py,46,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,48,Or -> And,survived,
+src/nhi_evidence/graph.py,48,In -> NotIn,survived,
+src/nhi_evidence/graph.py,66,And -> Or,killed,AttributeError: 'NoneType' object has no attribute 'startswith'
+src/nhi_evidence/graph.py,76,And -> Or,survived,
+src/nhi_evidence/graph.py,80,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,100,In -> NotIn,survived,
+src/nhi_evidence/graph.py,109,In -> NotIn,survived,
+src/nhi_evidence/graph.py,140,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,166,And -> Or,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,102,In -> NotIn,survived,
+src/nhi_evidence/graph.py,105,continue -> pass,survived,
+src/nhi_evidence/graph.py,140,drop not,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,141,Or -> And,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,160,NotIn -> In,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,166,In -> NotIn,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,166,NotEq -> Eq,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,166,NotIn -> In,killed,AssertionError: seeded
+src/nhi_evidence/graph.py,168,IsNot -> Is,survived,
+src/nhi_evidence/graph.py,111,In -> NotIn,survived,
+src/nhi_evidence/graph.py,55,3 -> 4,survived,

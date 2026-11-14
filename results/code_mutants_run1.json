@@ -1,0 +1,70 @@
+{
+ "mutants": 212,
+ "killed": 170,
+ "per_file": {
+  "c01_ownerless": {
+   "mutants": 11,
+   "killed": 11
+  },
+  "c02_unused": {
+   "mutants": 20,
+   "killed": 17
+  },
+  "c03_long_lived": {
+   "mutants": 14,
+   "killed": 12
+  },
+  "c04_credential_hygiene": {
+   "mutants": 4,
+   "killed": 4
+  },
+  "c05_secret_not_cert": {
+   "mutants": 13,
+   "killed": 11
+  },
+  "c06_high_priv_app_perms": {
+   "mutants": 4,
+   "killed": 4
+  },
+  "c07_tenant_wide_consent": {
+   "mutants": 12,
+   "killed": 9
+  },
+  "c08_privileged_role": {
+   "mutants": 5,
+   "killed": 3
+  },
+  "c09_loose_federation": {
+   "mutants": 17,
+   "killed": 14
+  },
+  "c10_unverified_third_party": {
+   "mutants": 13,
+   "killed": 13
+  },
+  "c11_environment_reuse": {
+   "mutants": 10,
+   "killed": 8
+  },
+  "c12_no_workload_ca": {
+   "mutants": 30,
+   "killed": 27
+  },
+  "c13_credential_paths": {
+   "mutants": 3,
+   "killed": 1
+  },
+  "c14_human_use": {
+   "mutants": 11,
+   "killed": 10
+  },
+  "finding": {
+   "mutants": 6,
+   "killed": 5
+  },
+  "graph": {
+   "mutants": 39,
+   "killed": 21
+  }
+ }
+}

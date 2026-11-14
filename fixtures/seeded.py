@@ -11,7 +11,7 @@ import sys
 from datetime import UTC, datetime
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.append(str(Path(__file__).resolve().parents[1] / "src"))  # appended: a caller's path wins
 from nhi_evidence.fixturekit import Tenant  # noqa: E402
 
 NOW = datetime(2026, 11, 1, tzinfo=UTC)

@@ -35,3 +35,10 @@ def test_cli_check_and_diff(tmp_path, capsys):
     assert cli.main(["check", str(tmp_path / "b"), "--out", str(tmp_path / "r")]) == 0
     assert cli.main(["diff", str(tmp_path / "a"), str(tmp_path / "b")]) == 1
     assert "Files.ReadWrite.All" in capsys.readouterr().out
+
+
+def test_cli_skip(tmp_path):
+    build(set(ISSUES)).snapshot().save(tmp_path / "s")
+    assert cli.main(["check", str(tmp_path / "s"), "--out", str(tmp_path / "r"), "--skip", "C12", "C13"]) == 0
+    data = json.loads((tmp_path / "r" / "findings.json").read_text())
+    assert not {f["check_id"] for f in data["findings"]} & {"C12", "C13"}

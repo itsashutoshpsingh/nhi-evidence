@@ -202,6 +202,7 @@ def main(argv=None) -> int:  # pragma: no cover - needs a live tenant
     p.add_argument("--client-id")
     p.add_argument("--confirm", help="must equal --tenant-id")
     p.add_argument("--domain", help="verified domain for lab users, e.g. yourlab.onmicrosoft.com")
+    p.add_argument("--skip", nargs="*", default=[], help="seed IDs to leave out, e.g. S11 without Workload ID Premium")
     a = p.parse_args(argv)
     if a.action == "plan":
         print(json.dumps(plan(a.domain or "{domain}"), indent=1))
@@ -232,7 +233,7 @@ def main(argv=None) -> int:  # pragma: no cover - needs a live tenant
     if not a.domain:
         print("pass --domain for the lab users", file=sys.stderr)
         return 2
-    apply(client, plan(a.domain), lambda: secrets.token_urlsafe(24) + "aA1!")
+    apply(client, [s for s in plan(a.domain) if s["issue"] not in a.skip], lambda: secrets.token_urlsafe(24) + "aA1!")
     return 0
 
 

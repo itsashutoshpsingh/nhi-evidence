@@ -5,6 +5,7 @@ import json
 import sys
 
 from . import auth, config, engine, report
+from .checks import CHECKS
 from .diff import diff
 from .snapshot import Snapshot
 
@@ -26,6 +27,7 @@ def main(argv=None) -> int:
     k.add_argument("--out", required=True)
     k.add_argument("--config")
     k.add_argument("--allowlist")
+    k.add_argument("--skip", nargs="*", default=[], metavar="CHECK", help="check IDs not to run, e.g. C12")
     k.add_argument("--scrub", nargs="*", metavar="DOMAIN",
                    help="replace object IDs and these domain names with pseudonyms in the output")
     d = sub.add_parser("diff", help="changes between two snapshots")
@@ -59,7 +61,8 @@ def main(argv=None) -> int:
     cfg = config.load(a.config)
     if a.cmd == "check":
         snap = Snapshot.load(a.snapshot)
-        findings = engine.evaluate(snap, cfg, engine.load_allowlist(a.allowlist))
+        checks = [c for c in CHECKS if c.META["id"] not in a.skip]
+        findings = engine.evaluate(snap, cfg, engine.load_allowlist(a.allowlist), checks=checks)
         report.write(snap, findings, a.out, a.scrub)
         live = [f for f in findings if not f.suppressed]
         print(f"{len(live)} findings ({len(findings) - len(live)} suppressed) -> {a.out}/report.md")

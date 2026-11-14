@@ -1,0 +1,20 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.32"
+      - run: uv sync --frozen --python ${{ matrix.python }}
+      - run: uv run ruff check .
+      - run: uv run pytest -q   # offline: fixtures and the in-process Graph mock, no tenant
+      - name: committed fixtures and seeded results still follow from the code
+        run: |
+          uv run python fixtures/seeded.py && git diff --exit-code fixtures/
+          uv run python experiments/eval_seeded.py > /dev/null && git diff --exit-code results/seeded_eval.json results/mutations.csv

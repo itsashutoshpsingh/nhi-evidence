@@ -1,0 +1,163 @@
+{
+ "project": "nhi-evidence",
+ "headline": "On a seeded test tenant built from Graph-shaped fixtures (not a live tenant), the read-only checks found all 15 planted findings from 14 misconfigurations with 0 false findings, each mapped to the OWASP NHI Top 10.",
+ "metrics": [
+  {
+   "label": "seeded findings found",
+   "value": "15 of 15"
+  },
+  {
+   "label": "false findings on the seeded tenant",
+   "value": "0"
+  },
+  {
+   "label": "single-change mutations caught exactly",
+   "value": "51 of 51"
+  },
+  {
+   "label": "code mutants caught by the tests",
+   "value": "99.0%"
+  },
+  {
+   "label": "synthetic planted findings found",
+   "value": "54,961 of 54,961"
+  },
+  {
+   "label": "run time at 100,000 identities",
+   "value": "6.1 s"
+  },
+  {
+   "label": "graph requests per service principal",
+   "value": "3.2"
+  },
+  {
+   "label": "false findings from one-line rules",
+   "value": "4,440"
+  },
+  {
+   "label": "owasp nhi risks with a check",
+   "value": "9 of 10"
+  },
+  {
+   "label": "checks",
+   "value": "14"
+  }
+ ],
+ "charts": [
+  {
+   "path": "docs/img/hero_seeded.png",
+   "label": "Seeded tenant",
+   "alt": "Planted and found findings per check on the seeded fixture tenant, all equal, no false findings"
+  },
+  {
+   "path": "docs/img/mutation_matrix.png",
+   "label": "Mutation matrix",
+   "alt": "Heat map of 51 single-change mutations against the 14 checks; each fires its own check"
+  },
+  {
+   "path": "docs/img/code_mutants.png",
+   "label": "Code mutants",
+   "alt": "Code mutants caught and not caught by the test suite, per check module"
+  },
+  {
+   "path": "docs/img/scale_runtime.png",
+   "label": "Run time",
+   "alt": "Run time of all checks against tenant size from 100 to 100,000, and per check at 100,000"
+  },
+  {
+   "path": "docs/img/scale_recall.png",
+   "label": "Recall at scale",
+   "alt": "Planted findings per check over 18 synthetic tenants with the Wilson lower bound of recall"
+  },
+  {
+   "path": "docs/img/ablation.png",
+   "label": "One-line rules",
+   "alt": "False and missed findings of one-line versions of each check compared with the refined checks"
+  },
+  {
+   "path": "docs/img/collect_cost.png",
+   "label": "Collection cost",
+   "alt": "Graph GET requests the collector sends for 100, 1,000 and 10,000 service principals"
+  },
+  {
+   "path": "docs/img/credential_paths.png",
+   "label": "Credential paths",
+   "alt": "Diagram of who can add a credential to privileged service principals in the seeded tenant"
+  },
+  {
+   "path": "docs/img/owasp_coverage.png",
+   "label": "OWASP coverage",
+   "alt": "Number of checks mapped to each OWASP NHI Top 10 risk"
+  },
+  {
+   "path": "docs/img/pipeline.png",
+   "label": "Pipeline",
+   "alt": "Pipeline from read-only Graph collection to snapshot, checks, allowlist and report"
+  }
+ ],
+ "viz": [
+  {
+   "title": "All 15 seeded findings found, none false, on the fixture tenant",
+   "unit": "count",
+   "bars": [
+    {
+     "label": "found",
+     "value": 15,
+     "tone": "good"
+    },
+    {
+     "label": "missed",
+     "value": 0,
+     "tone": "bad"
+    },
+    {
+     "label": "false",
+     "value": 0,
+     "tone": "bad"
+    },
+    {
+     "label": "suppressed by allowlist",
+     "value": 5,
+     "tone": "neutral"
+    }
+   ]
+  },
+  {
+   "title": "The tests catch 99.0% of deliberately broken check code",
+   "unit": "%",
+   "bars": [
+    {
+     "label": "first run",
+     "value": 80.2,
+     "tone": "warn"
+    },
+    {
+     "label": "final run",
+     "value": 99.0,
+     "tone": "good"
+    }
+   ]
+  },
+  {
+   "title": "One-line rules trip on look-alike controls; the refined checks do not",
+   "unit": "count",
+   "bars": [
+    {
+     "label": "one-line false",
+     "value": 4440,
+     "tone": "bad"
+    },
+    {
+     "label": "one-line missed",
+     "value": 218,
+     "tone": "warn"
+    },
+    {
+     "label": "refined errors",
+     "value": 0,
+     "tone": "good"
+    }
+   ]
+  }
+ ]
+}

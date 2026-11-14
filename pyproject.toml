@@ -29,11 +29,14 @@ build-backend = "hatchling.build"
 packages = ["src/nhi_evidence"]
 
 [tool.ruff]
-line-length = 120
+line-length = 135
 target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"experiments/*" = ["B007"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -137,7 +137,8 @@ def _privileged_principals(snap, cfg) -> set[str]:
 
 
 def targets(snap, cfg) -> list[dict]:
-    return [s for s in snap.servicePrincipals if not snap.is_first_party(s)
+    """Enabled, privileged, non-Microsoft service principals (a disabled one cannot sign in)."""
+    return [s for s in snap.servicePrincipals if not snap.is_first_party(s) and s.get("accountEnabled")
             and (is_privileged(snap, cfg, s["id"]) or privileged_roles(snap, s["id"]))]
 
 
@@ -150,8 +151,6 @@ def paths(snap, cfg, g: nx.DiGraph | None = None, cap: int = 10) -> dict[str, tu
     out = {}
     for sp in targets(snap, cfg):
         t = node("sp", sp["id"])
-        if t not in g:
-            continue
         parent = {t: None}
         q = deque([t])
         while q:  # BFS on the reversed graph gives one shortest path from every source

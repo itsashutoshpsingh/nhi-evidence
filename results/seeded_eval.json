@@ -19,7 +19,7 @@
  "clean": {
   "findings": 0,
   "suppressed": 5,
-  "lookalike_controls": 26
+  "lookalike_controls": 34
  },
  "per_issue": [
   {
@@ -187,10 +187,10 @@
  },
  "checks": 14,
  "mutations": {
-  "count": 42,
-  "exact": 42,
-  "expected": 65,
-  "found": 65,
+  "count": 51,
+  "exact": 51,
+  "expected": 81,
+  "found": 81,
   "missed": 0,
   "false": 0,
   "checks_covered": 14

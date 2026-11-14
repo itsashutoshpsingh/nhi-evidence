@@ -178,7 +178,8 @@
    "homePageUrl": null,
    "logoutUrl": null,
    "redirectUris": [
-    "https://hr.lab.example/auth"
+    "https://hr.lab.example/auth",
+    "https://hr.lab.example/auth/test-callback"
    ],
    "implicitGrantSettings": {
     "enableAccessTokenIssuance": false,
@@ -438,6 +439,45 @@
   "keyCredentials": []
  },
  {
+  "id": "4d12c8e3-59b5-5ccf-bcef-2c9c3dd4edd7",
+  "appId": "1ba33971-2c70-532c-9c3a-bf6b8d331c6c",
+  "displayName": "partner-registration",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [
+   {
+    "customKeyIdentifier": null,
+    "displayName": "partner-registration-0 secret",
+    "endDateTime": "2027-01-20T00:00:00Z",
+    "hint": "Lab",
+    "keyId": "7a884c5e-3038-5098-8c65-452c64f2de5f",
+    "secretText": null,
+    "startDateTime": "2026-10-22T00:00:00Z"
+   }
+  ],
+  "keyCredentials": []
+ },
+ {
   "id": "a13d7780-432d-5df0-b0d6-4207dbc13fc6",
   "appId": "98f27186-5d94-53ea-a371-64ad82605e37",
   "displayName": "doc-archiver",
@@ -656,6 +696,35 @@
   "keyCredentials": []
  },
  {
+  "id": "0934e1d3-bc92-5902-b465-193222cf17b5",
+  "appId": "b0d49841-fa29-5383-99cd-8fc091ef1f9b",
+  "displayName": "docs-publisher",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": []
+ },
+ {
   "id": "7c6f2685-87fe-5e1b-86a5-5a10235c9f16",
   "appId": "8ecb38d6-cb91-5ffa-9232-202166f72559",
   "displayName": "aks-workload",
@@ -763,7 +832,8 @@
    "homePageUrl": null,
    "logoutUrl": null,
    "redirectUris": [
-    "https://orders-dev.lab.example/auth"
+    "https://orders-dev.lab.example/auth",
+    "https://orders-dev.lab.example/auth/production-preview"
    ],
    "implicitGrantSettings": {
     "enableAccessTokenIssuance": false,
@@ -858,6 +928,46 @@
     "endDateTime": "2027-10-02T00:00:00Z",
     "key": null,
     "keyId": "f1d1bb5f-dff0-5997-a1d8-b872b8be3ff0",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "2ecc5fed-4fe6-5126-af92-ce9c0f0c0c32",
+  "appId": "e3f44ed0-3327-5f46-a0e8-ad2cca927755",
+  "displayName": "partner-sync",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMultipleOrgs",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "2EF4B49B6AB8622E52C0EAF5B8F55F49754F7720",
+    "displayName": "CN=partner-sync-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "82c662c3-b07a-5982-910a-5a5804336a99",
     "startDateTime": "2026-10-02T00:00:00Z",
     "type": "AsymmetricX509Cert",
     "usage": "Verify"
@@ -1058,6 +1168,86 @@
     "endDateTime": "2027-10-02T00:00:00Z",
     "key": null,
     "keyId": "ec265cea-9d09-57e8-bcab-e8a444d7ce76",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "740bb5a5-d32a-5930-8f54-90c60cef55ee",
+  "appId": "f282fa52-80f1-582b-919f-e5f80ad04043",
+  "displayName": "brochure-site",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "0E8D1337B35E5563C259A42C5EE6DE13A2610E2A",
+    "displayName": "CN=brochure-site-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "059bdc3a-10e1-5ffd-b65f-caa7803fedb8",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ]
+ },
+ {
+  "id": "f9b26f2d-2cd6-51bd-a0c8-49802e182da7",
+  "appId": "906fd589-0d7d-5ab1-938d-2f565c0e9812",
+  "displayName": "quarterly-audit",
+  "createdDateTime": "2025-09-27T00:00:00Z",
+  "signInAudience": "AzureADMyOrg",
+  "publisherDomain": "lab.example",
+  "isFallbackPublicClient": false,
+  "identifierUris": [],
+  "serviceManagementReference": null,
+  "tags": [],
+  "notes": null,
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "web": {
+   "homePageUrl": null,
+   "logoutUrl": null,
+   "redirectUris": [],
+   "implicitGrantSettings": {
+    "enableAccessTokenIssuance": false,
+    "enableIdTokenIssuance": false
+   }
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "2E57052F7F6B40EB06DC8AAA3F338063F1588A70",
+    "displayName": "CN=quarterly-audit-0",
+    "endDateTime": "2027-10-02T00:00:00Z",
+    "key": null,
+    "keyId": "273c0906-fbca-5765-bcfb-73fa1c28ef16",
     "startDateTime": "2026-10-02T00:00:00Z",
     "type": "AsymmetricX509Cert",
     "usage": "Verify"

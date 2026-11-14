@@ -30,5 +30,13 @@
   "principalId": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
   "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5",
   "scope": "openid User.Read Mail.Read"
+ },
+ {
+  "id": "H4btFnlFZKRf5Ode69PVDSX4amhxdLEpHHpOrtgeTTc=",
+  "clientId": "909d1e47-5236-50f1-8494-7298a16a152f",
+  "consentType": "AllPrincipals",
+  "principalId": null,
+  "resourceId": "97d51dda-8889-5278-9662-50658ce23e21",
+  "scope": "Mail.Read"
  }
 ]

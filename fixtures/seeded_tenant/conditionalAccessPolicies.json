@@ -17,7 +17,9 @@
      "ServicePrincipalsInMyTenant"
     ],
     "excludeServicePrincipals": [
-     "e68b661c-0e21-51cf-ac0e-bcb286150d55"
+     "e68b661c-0e21-51cf-ac0e-bcb286150d55",
+     "fd4aefa9-f67d-5b82-b8b1-91c03a8967dc",
+     "56294b8b-7a9f-55ec-bb5b-ffd4142a51ee"
     ],
     "servicePrincipalFilter": null
    },

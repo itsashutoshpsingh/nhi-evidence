@@ -2,14 +2,16 @@
 
 Each mutant changes one operator or statement in src/nhi_evidence/checks/*.py, finding.py or graph.py
 (comparison flipped, `and`/`or` swapped, `not` dropped, `continue` removed, a number nudged by one, a
-returned list emptied). The oracle reruns the seeded tenant, the clean tenant, each issue alone, the 42
-fixture mutations and three small synthetic tenants in a fresh interpreter. A mutant is killed if any
-result changes or the code crashes. Writes results/code_mutants.csv and results/code_mutants.json.
+returned list emptied). The oracle runs the whole pytest suite against the mutated copy, then compares every
+finding record (keys, severity, evidence, paths) on the seeded tenant and three 300-identity synthetic
+tenants with a golden copy from the unmutated code. A mutant is killed if a test fails, the code
+crashes, or any record changes. Writes results/code_mutants.csv and results/code_mutants.json.
 """
 
 import ast
 import csv
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -22,36 +24,22 @@ TARGETS = sorted((ROOT / "src/nhi_evidence/checks").glob("c*.py")) + [ROOT / "sr
                                                                       ROOT / "src/nhi_evidence/graph.py"]
 SWAP = {ast.Lt: ast.LtE, ast.LtE: ast.Lt, ast.Gt: ast.GtE, ast.GtE: ast.Gt, ast.Eq: ast.NotEq, ast.NotEq: ast.Eq,
         ast.In: ast.NotIn, ast.NotIn: ast.In, ast.Is: ast.IsNot, ast.IsNot: ast.Is}
-ORACLE = r'''
-import sys
-sys.path[:0] = [sys.argv[1] + "/src", "{root}/fixtures", "{root}/experiments"]
-from mutations import MUTATIONS, apply
+GOLDEN = r'''
+import json, sys
+sys.path[:0] = [sys.argv[1], "{root}/fixtures", "{root}/experiments"]
 from seeded import ISSUES, allowlist, build
 from synth import generate
 from nhi_evidence import config, engine
 cfg = config.load()
-def live(snap, allow=None):
-    return {{f.key for f in engine.evaluate(snap, cfg, allow) if not f.suppressed}}
-def exp(t, issues):
-    out = set()
-    for k in issues:
-        for c, r, name, _ in ISSUES[k]:
-            o = t.by_name.get("app:" + name) if c in ("C01", "C03", "C04", "C05", "C09", "C11") else None
-            out.add((c, r, (o or t.by_name[name])["id"]))
-    return out
+def records(snap, allow=None):
+    fs = engine.evaluate(snap, cfg, allow)
+    return sorted(json.dumps(f.to_dict(), sort_keys=True, default=str) for f in fs)
 t = build(set(ISSUES))
-assert live(t.snapshot(), allowlist(t)) == exp(t, ISSUES), "seeded"
-t = build(set())
-assert live(t.snapshot(), allowlist(t)) == set(), "clean"
-for k in ISSUES:
-    t = build({{k}})
-    assert live(t.snapshot(), allowlist(t)) == exp(t, {{k}}), "alone " + k
-for m in MUTATIONS:
-    s, e, a = apply(m[0])
-    assert live(s, a) == e, "mutation " + m[0]
+out = {{"seeded": records(t.snapshot(), allowlist(t))}}
 for seed in (1, 2, 3):
-    t, e, _ = generate(100, seed)
-    assert live(t.snapshot()) == e, "synthetic " + str(seed)
+    g, _, _ = generate(300, seed)
+    out[f"synthetic-300-{{seed}}"] = records(g.snapshot())
+json.dump(out, open(sys.argv[2], "w"))
 '''
 
 
@@ -100,26 +88,47 @@ def mutate(src: str, index: int) -> tuple[str, int, str]:
     return ast.unparse(tree), line, desc
 
 
+def oracle(src_dir: Path, golden: Path, out: Path) -> tuple[str, str]:
+    """(status, reason). Killed if the test suite fails, or any finding record differs from the golden copy."""
+    env = dict(os.environ, NHI_SRC=str(src_dir))
+    r = subprocess.run([sys.executable, "-m", "pytest", "-x", "-q", "-p", "no:cacheprovider", str(ROOT / "tests")],
+                       capture_output=True, text=True, timeout=300, env=env, cwd=ROOT)
+    if r.returncode != 0:
+        failed = [ln for ln in r.stdout.splitlines() if ln.startswith(("FAILED", "ERROR"))]
+        return "killed", "tests: " + (failed[0] if failed else r.stdout.strip().splitlines()[-1])[:150]
+    script = out.parent / "golden.py"
+    script.write_text(GOLDEN.format(root=ROOT))
+    r = subprocess.run([sys.executable, str(script), str(src_dir), str(out)], capture_output=True, text=True,
+                       timeout=300)
+    if r.returncode != 0:
+        return "killed", "golden: crashed " + (r.stderr.strip().splitlines() or ["?"])[-1][:120]
+    a, b = json.loads(out.read_text()), json.loads(golden.read_text())
+    diff = [k for k in b if a.get(k) != b[k]]
+    return ("killed", "golden: output differs on " + ", ".join(diff)) if diff else ("survived", "")
+
+
 def run_one(job):
-    path, index = job
+    path, index, golden = job
     src = path.read_text()
     mutated, line, desc = mutate(src, index)
     with tempfile.TemporaryDirectory() as tmp:
         shutil.copytree(ROOT / "src", Path(tmp) / "src")
         (Path(tmp) / "src" / path.relative_to(ROOT / "src")).write_text(mutated)
-        (Path(tmp) / "oracle.py").write_text(ORACLE.format(root=ROOT))
         try:
-            r = subprocess.run([sys.executable, str(Path(tmp) / "oracle.py"), tmp], capture_output=True, text=True,
-                               timeout=120)
-            status = "survived" if r.returncode == 0 else "killed"
-            why = "" if r.returncode == 0 else (r.stderr.strip().splitlines() or ["?"])[-1][:160]
+            status, why = oracle(Path(tmp) / "src", golden, Path(tmp) / "out.json")
         except subprocess.TimeoutExpired:
             status, why = "killed", "timeout"
     return {"file": str(path.relative_to(ROOT)), "line": line, "mutation": desc, "status": status, "reason": why}
 
 
 def main():
-    jobs = [(p, i) for p in TARGETS for i in range(len(sites(ast.parse(p.read_text()))))]
+    golden = ROOT / "build" / "golden.json"
+    golden.parent.mkdir(exist_ok=True)
+    (golden.parent / "golden.py").write_text(GOLDEN.format(root=ROOT))
+    subprocess.run([sys.executable, str(golden.parent / "golden.py"), str(ROOT / "src"), str(golden)], check=True)
+    status, why = oracle(ROOT / "src", golden, golden.parent / "self.json")
+    assert status == "survived", f"the unmutated code must pass its own oracle: {why}"
+    jobs = [(p, i, golden) for p in TARGETS for i in range(len(sites(ast.parse(p.read_text()))))]
     with ThreadPoolExecutor(max_workers=2) as ex:  # two interpreters at a time: the machine is shared
         rows = list(ex.map(run_one, jobs))
     out = ROOT / "results"

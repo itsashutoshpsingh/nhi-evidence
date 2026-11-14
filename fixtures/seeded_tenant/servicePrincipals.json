@@ -7109,6 +7109,25 @@
   "tags": []
  },
  {
+  "id": "a3ed3e62-d5bf-5a19-a77f-2a9908fb2269",
+  "appId": "b0d49841-fa29-5383-99cd-8fc091ef1f9b",
+  "displayName": "docs-publisher",
+  "appDisplayName": "docs-publisher",
+  "accountEnabled": true,
+  "appOwnerOrganizationId": "db40fd89-ce97-5a51-b269-0b0913973320",
+  "servicePrincipalType": "Application",
+  "signInAudience": "AzureADMyOrg",
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [],
+  "appRoles": [],
+  "tags": []
+ },
+ {
   "id": "73a70501-9f3e-5aaf-8b1f-9255abf52eec",
   "appId": "8ecb38d6-cb91-5ffa-9232-202166f72559",
   "displayName": "aks-workload",
@@ -7161,7 +7180,18 @@
    "addedDateTime": "2024-05-15T00:00:00Z"
   },
   "passwordCredentials": [],
-  "keyCredentials": [],
+  "keyCredentials": [
+   {
+    "customKeyIdentifier": "8AFE1EFCFDA5782767628E0EB36807E7611F26A3",
+    "displayName": "CN=ticketdesk-saml-signing",
+    "endDateTime": "2029-10-01T00:00:00Z",
+    "key": null,
+    "keyId": "43233f4c-3ec0-555d-9bb2-2423a446a810",
+    "startDateTime": "2026-10-02T00:00:00Z",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+   }
+  ],
   "appRoles": [],
   "tags": []
  },
@@ -7287,6 +7317,25 @@
   "tags": []
  },
  {
+  "id": "56294b8b-7a9f-55ec-bb5b-ffd4142a51ee",
+  "appId": "e3f44ed0-3327-5f46-a0e8-ad2cca927755",
+  "displayName": "partner-sync",
+  "appDisplayName": "partner-sync",
+  "accountEnabled": true,
+  "appOwnerOrganizationId": "db40fd89-ce97-5a51-b269-0b0913973320",
+  "servicePrincipalType": "Application",
+  "signInAudience": "AzureADMultipleOrgs",
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [],
+  "appRoles": [],
+  "tags": []
+ },
+ {
   "id": "5cbd28f9-ba4d-5e7a-a9ff-c3207383caf3",
   "appId": "e434cba4-a5f2-54c7-8068-d72632e81504",
   "displayName": "sharepoint-migrator",
@@ -7368,6 +7417,44 @@
   "displayName": "retired-tool",
   "appDisplayName": "retired-tool",
   "accountEnabled": false,
+  "appOwnerOrganizationId": "db40fd89-ce97-5a51-b269-0b0913973320",
+  "servicePrincipalType": "Application",
+  "signInAudience": "AzureADMyOrg",
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [],
+  "appRoles": [],
+  "tags": []
+ },
+ {
+  "id": "533fdfc3-642f-5424-81a1-e684873a7b04",
+  "appId": "f282fa52-80f1-582b-919f-e5f80ad04043",
+  "displayName": "brochure-site",
+  "appDisplayName": "brochure-site",
+  "accountEnabled": true,
+  "appOwnerOrganizationId": "db40fd89-ce97-5a51-b269-0b0913973320",
+  "servicePrincipalType": "Application",
+  "signInAudience": "AzureADMyOrg",
+  "verifiedPublisher": {
+   "displayName": null,
+   "verifiedPublisherId": null,
+   "addedDateTime": null
+  },
+  "passwordCredentials": [],
+  "keyCredentials": [],
+  "appRoles": [],
+  "tags": []
+ },
+ {
+  "id": "1cba00a5-a385-523d-8e28-0b8d0b09e208",
+  "appId": "906fd589-0d7d-5ab1-938d-2f565c0e9812",
+  "displayName": "quarterly-audit",
+  "appDisplayName": "quarterly-audit",
+  "accountEnabled": true,
   "appOwnerOrganizationId": "db40fd89-ce97-5a51-b269-0b0913973320",
   "servicePrincipalType": "Application",
   "signInAudience": "AzureADMyOrg",

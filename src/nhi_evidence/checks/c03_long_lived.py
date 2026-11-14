@@ -1,5 +1,7 @@
 """Check 3: client secret valid for more than N days, or with no end date (NHI7 Long-Lived Secrets)."""
 
+from datetime import timedelta
+
 from ..finding import Finding, escalate
 from ..snapshot import ts
 
@@ -26,9 +28,10 @@ def run(snap, cfg) -> list[Finding]:
             if not snap.active(c):
                 continue  # expired secrets are check 4
             start, end = ts(c.get("startDateTime")), ts(c.get("endDateTime"))
-            days = None if end is None or start is None else (end - start).total_seconds() / 86400
-            if days is not None and days <= limit:
+            life = None if end is None or start is None else end - start
+            if life is not None and life <= timedelta(days=limit):
                 continue
+            days = None if life is None else life / timedelta(days=1)
             out.append(Finding(
                 "C03", "no_end_date" if end is None else "lifetime_over_limit", META["nhi"], obj["id"], kind,
                 obj["displayName"], escalate(snap, cfg, sp, "low"),

@@ -104,6 +104,15 @@
    "accountEnabled": true
   }
  ],
+ "4d12c8e3-59b5-5ccf-bcef-2c9c3dd4edd7": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
  "a13d7780-432d-5df0-b0d6-4207dbc13fc6": [],
  "b2d77906-70e9-5fa4-bf10-6762b635fc74": [],
  "7e37b16f-4c2d-543f-a59f-68e34f9095a0": [],
@@ -118,6 +127,15 @@
   }
  ],
  "e1754448-06ed-5bed-b050-dfcf3d09090f": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "0934e1d3-bc92-5902-b465-193222cf17b5": [
   {
    "@odata.type": "#microsoft.graph.user",
    "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
@@ -180,6 +198,15 @@
    "accountEnabled": true
   }
  ],
+ "2ecc5fed-4fe6-5126-af92-ce9c0f0c0c32": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
  "8da8a791-9454-5cb3-8cb9-89b75da3cec7": [],
  "dac4b7e5-21f4-5fce-8309-69cd7f9521ed": [
   {
@@ -209,6 +236,24 @@
   }
  ],
  "6f079c0e-3ade-52a5-a5a3-3de8cbbb0e30": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",
+   "displayName": "Carol Clark",
+   "userPrincipalName": "carol@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "740bb5a5-d32a-5930-8f54-90c60cef55ee": [
+  {
+   "@odata.type": "#microsoft.graph.user",
+   "id": "15b59f04-0472-5fbd-aba0-12251b6e4a4e",
+   "displayName": "Bob Builder",
+   "userPrincipalName": "bob@lab.example",
+   "accountEnabled": true
+  }
+ ],
+ "f9b26f2d-2cd6-51bd-a0c8-49802e182da7": [
   {
    "@odata.type": "#microsoft.graph.user",
    "id": "3cd82ce5-f3a4-5a93-82f1-c89cc972764a",

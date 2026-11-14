@@ -57,18 +57,27 @@ CONTROLS = {
     "people-directory": "C06: Application.Read.All (read, not ReadWrite)",
     "Calendar Booking": "C07: all-user consent to basic sign-in scopes only",
     "Notes Helper": "C07: Mail.Read consented by one user, not all users",
+    "Calendar Booking (second grant)": "C07: all-user consent to a scope named Mail.Read on a non-Graph API",
+    "hr-portal (redirect)": "C11: environment word only in a redirect path, not the host",
     "audit-reader": "C08: Directory Readers (not a privileged role)",
     "site-builder": "C09: GitHub subject pinned to the main branch",
     "aks-workload": "C09: Kubernetes subject naming one service account",
-    "TicketDesk": "C10: verified publisher holding the same permission",
+    "TicketDesk": "C10: verified publisher holding the same permission; C12: SAML signing certificate on a "
+                  "third-party service principal",
     "Wallpaper Gallery": "C10: unverified publisher with no permissions",
     "orders-web-dev": "C11: separate dev app",
     "orders-web-prod": "C11: separate prod app",
     "mi-backup-vault": "C12: managed identity (Conditional Access cannot cover it)",
+    "partner-sync": "C12: multi-tenant app registered here, excluded (policies cover single-tenant apps only)",
+    "orders-web-dev (redirect)": "C11: a dev host whose redirect path mentions production",
     "teams-notifier": "C13: non-admin owner of an app with low permissions",
     "App Admins": "C13: role-assignable group whose owner and members are admins",
     "new-intake-bot": "C02: created 20 days ago, no sign-in yet",
-    "retired-tool": "C02: disabled and unused",
+    "brochure-site": "C02: never signed in, but holds no access",
+    "quarterly-audit": "C02: last sign-in exactly 90 days ago (limit is more than 90)",
+    "partner-registration": "C05: app registration with no service principal in this tenant",
+    "docs-publisher": "C09: flexible credential using 'matches' with no wildcard",
+    "retired-tool": "C02: disabled and unused; C12: disabled and excluded from the policy",
     "frank": "C14: a person's own interactive sign-ins",
     "mail-triage-agent": "C01: agent identity with a sponsor",
     "Microsoft Azure CLI": "allowlist: Microsoft first-party app with all-user consent",
@@ -104,7 +113,8 @@ def build(on: set[str], include_activity: bool = True) -> Tenant:
     t.app("directory-sync-prod", smr="CMDB-4411", certs=cert, perms=["User.Read.All"])
     # --- C03
     t.app("legacy-crm-connector", owners=[carol], secrets=[(100, 730)] if "S02" in on else [(10, 90)])
-    t.app("hr-portal", owners=[bob], secrets=[(20, 180)], redirects=["https://hr.lab.example/auth"])
+    t.app("hr-portal", owners=[bob], secrets=[(20, 180)],
+          redirects=["https://hr.lab.example/auth", "https://hr.lab.example/auth/test-callback"])
     t.app("partner-portal", owners=[carol], secrets=[(20, 179)])
     # --- C04
     t.app("old-billing-api", owners=[bob], certs=cert, secrets=[(400, 370)] if "S03" in on else [])
@@ -114,16 +124,20 @@ def build(on: set[str], include_activity: bool = True) -> Tenant:
           secrets=short if "S04" in on else [], certs=[] if "S04" in on else cert)
     t.app("metrics-collector", owners=[bob], perms=["User.Read.All"], certs=cert)
     t.app("web-signin-app", owners=[carol], secrets=short, redirects=["https://portal.lab.example/signin"])
+    t.app("partner-registration", owners=[carol], secrets=short, with_sp=False)
     # --- C06
     t.app("doc-archiver", smr="CMDB-5120", certs=cert,
           perms=["Files.ReadWrite.All"] if "S05" in on else ["Sites.Selected"])
-    t.app("people-directory", smr="CMDB-5121", certs=cert, perms=["Application.Read.All"])
+    _, people = t.app("people-directory", smr="CMDB-5121", certs=cert, perms=["Application.Read.All"])
     # --- C07
     t.third_party("MailMerge Pro", "mailmerge", True, all_consent="openid profile User.Read" +
                   (" Mail.Read Files.ReadWrite.All" if "S06" in on else ""))
-    t.third_party("Calendar Booking", "calendarbooking", True,
-                  all_consent="openid profile email offline_access User.Read")
+    cal = t.third_party("Calendar Booking", "calendarbooking", True,
+                        all_consent="openid profile email offline_access User.Read")
     t.third_party("Notes Helper", "notes", True, principal_consent=(carol, "openid User.Read Mail.Read"))
+    t.d["oauth2PermissionGrants"].append({  # a scope named like Graph's, but on another API
+        "id": t.opaque("grant", cal["id"], "people"), "clientId": cal["id"], "consentType": "AllPrincipals",
+        "principalId": None, "resourceId": people["id"], "scope": "Mail.Read"})
     # --- C08
     t.app("identity-automation", smr="CMDB-6001", certs=cert,
           roles=["Privileged Role Administrator"] if "S07" in on else ["Directory Readers"])
@@ -132,24 +146,30 @@ def build(on: set[str], include_activity: bool = True) -> Tenant:
     t.app("infra-deployer", owners=[bob], fics=[t.fic(
         "gh-infra", "repo:lab-org/infra:pull_request" if "S08" in on else "repo:lab-org/infra:environment:production")])
     t.app("site-builder", owners=[bob], fics=[t.fic("gh-site", "repo:lab-org/site:ref:refs/heads/main")])
+    t.app("docs-publisher", owners=[bob], fics=[t.fic(
+        "gh-docs", None, expression="claims['sub'] matches 'repo:lab-org/docs:ref:refs/heads/main'")])
     t.app("aks-workload", owners=[carol], fics=[t.fic(
         "aks-payments", "system:serviceaccount:payments:api", issuer=AKS.format(t=t.tenant_id, c=t.uid("aks")))])
     # --- C10
     t.third_party("QuickSurvey", "quicksurvey", verified="S09" not in on, perms=["User.Read.All"])
-    t.third_party("TicketDesk", "ticketdesk", True, perms=["User.Read.All"])
+    desk = t.third_party("TicketDesk", "ticketdesk", True, perms=["User.Read.All"])
+    desk["keyCredentials"] = [t.cert("ticketdesk-saml-signing", 30, 1095)]  # SAML signing cert on the SP
     t.third_party("Wallpaper Gallery", "wallpaper", False)
     # --- C11
     t.app("orders-api-ci", owners=[bob], fics=[t.fic("gh-orders-prod", "repo:lab-org/orders:environment:production")]
           + ([t.fic("gh-orders-dev", "repo:lab-org/orders:environment:dev")] if "S10" in on else []))
     if "S10" not in on:
         t.app("orders-api-ci-dev", owners=[bob], fics=[t.fic("gh-orders-dev", "repo:lab-org/orders:environment:dev")])
-    t.app("orders-web-dev", owners=[bob], secrets=short, redirects=["https://orders-dev.lab.example/auth"])
+    t.app("orders-web-dev", owners=[bob], secrets=short,
+          redirects=["https://orders-dev.lab.example/auth", "https://orders-dev.lab.example/auth/production-preview"])
     t.app("orders-web-prod", owners=[bob], secrets=short, redirects=["https://orders-prod.lab.example/auth"])
     # --- C12
     _, payroll = t.app("payroll-export", owners=[carol], certs=cert, perms=["User.Read.All"])
     t.managed_identity("mi-backup-vault", perms=["User.Read.All"])
-    t.ca_policy("Block workload identities outside trusted locations",
-                exclude=[payroll["id"]] if "S11" in on else [])
+    _, partner = t.app("partner-sync", owners=[carol], certs=cert, perms=["User.Read.All"],
+                       audience="AzureADMultipleOrgs")
+    policy = t.ca_policy("Block workload identities outside trusted locations",
+                         exclude=[payroll["id"]] if "S11" in on else [])
     # --- C13
     t.app("sharepoint-migrator", owners=[bob] if "S12" in on else [], smr=None if "S12" in on else "CMDB-7003",
           certs=cert, perms=["Sites.FullControl.All"] if "S12" in on else ["Sites.Selected"])
@@ -158,7 +178,11 @@ def build(on: set[str], include_activity: bool = True) -> Tenant:
     t.app("survey-importer", owners=[carol], certs=cert, perms=["User.Read.All"],
           last_sign_in=200 if "S13" in on else 5)
     t.app("new-intake-bot", owners=[carol], certs=cert, perms=["User.Read.All"], created_ago=20, last_sign_in=None)
-    t.app("retired-tool", owners=[carol], certs=cert, perms=["User.Read.All"], enabled=False, last_sign_in=None)
+    _, retired = t.app("retired-tool", owners=[carol], certs=cert, perms=["User.Read.All"], enabled=False,
+                       last_sign_in=None)
+    policy["conditions"]["clientApplications"]["excludeServicePrincipals"] += [retired["id"], partner["id"]]
+    t.app("brochure-site", owners=[bob], certs=cert, last_sign_in=None)
+    t.app("quarterly-audit", owners=[carol], certs=cert, perms=["User.Read.All"], last_sign_in=90)
     # --- C14
     portal = t.by_name["Azure Portal"]
     if include_activity:

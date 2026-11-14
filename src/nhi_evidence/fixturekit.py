@@ -128,7 +128,7 @@ class Tenant:
 
     def app(self, name: str, owners=(), secrets=(), certs=(), fics=(), smr=None, redirects=(), perms=(),
             all_consent=None, roles=(), created_ago: float = 400, audience="AzureADMyOrg",
-            sp_secrets=(), enabled=True, last_sign_in: float | None = 3) -> tuple[dict, dict]:
+            sp_secrets=(), enabled=True, last_sign_in: float | None = 3, with_sp: bool = True) -> tuple[dict, dict]:
         """An app registration in this tenant with its service principal. secrets: (start_ago, lifetime)."""
         app_id = self.uid("appId", name)
         app = {"id": self.uid("app", name), "appId": app_id, "displayName": name,
@@ -144,6 +144,9 @@ class Tenant:
         self.d["applications"].append(app)
         self.d["applicationOwners"][app["id"]] = [self.ref(o) for o in owners]
         self.d["federatedIdentityCredentials"][app["id"]] = list(fics)
+        self.by_name[f"app:{name}"] = app
+        if not with_sp:  # registered here but never instantiated (no service principal in this tenant)
+            return app, None
         sp = self._sp(name, app_id, self.tenant_id, None, enabled=enabled, audience=audience)
         sp["verifiedPublisher"] = {"displayName": None, "verifiedPublisherId": None, "addedDateTime": None}
         sp["passwordCredentials"] = [self.secret(f"{name}-sp-{i}", *s) for i, s in enumerate(sp_secrets)]

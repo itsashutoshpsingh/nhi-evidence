@@ -49,3 +49,12 @@ def test_audience_rule():
 ])
 def test_env_class(text, want):
     assert env_class(text, CFG) == want
+
+
+def test_deleted_user_keeps_sign_in_name():
+    from mutations import apply
+
+    from nhi_evidence import engine
+    snap, _, allow = apply("M14c")
+    names = {f.display_name for f in engine.evaluate(snap, CFG, allow) if f.check_id == "C14"}
+    assert names == {"svc-backup"}

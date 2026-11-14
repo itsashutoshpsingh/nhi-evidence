@@ -6,6 +6,7 @@ M01d,C01,agent identity loses its sponsor,1,1,0,0,C01,True
 M02a,C02,last sign-in 91 days ago,1,1,0,0,C02,True
 M02b,C02,no sign-in activity record,1,1,0,0,C02,True
 M02c,C02,app created 120 days ago and never used,1,1,0,0,C02,True
+M02d,C02,app created exactly 90 days ago and never used (not too new any more),1,1,0,0,C02,True
 M03a,C03,secret lifetime 181 days,1,1,0,0,C03,True
 M03b,C03,secret with no end date,1,1,0,0,C03,True
 M03c,C03,365-day secret on the service principal object (hidden from App registrations),1,1,0,0,C03,True
@@ -15,11 +16,13 @@ M04c,C04,expired secret on the service principal object,1,1,0,0,C04,True
 M05a,C05,certificate replaced by a secret,1,1,0,0,C05,True
 M05b,C05,role-holding app switches to a secret,1,1,0,0,C05,True
 M05c,C05,"certificate expired, secret active",2,2,0,0,C04 C05,True
+M05d,C05,"app-only app whose only secret has expired (C04's case, not C05's)",1,1,0,0,C04,True
 M06a,C06,Mail.Send application permission,2,2,0,0,C06 C13,True
 M06b,C06,Application.ReadWrite.All on an ownerless app,1,1,0,0,C06,True
 M06c,C06,"RoleManagement.ReadWrite.Directory, resolved from the reference table",3,3,0,0,C06 C13,True
 M07a,C07,all-user consent gains Files.Read.All,1,1,0,0,C07,True
 M07b,C07,single-user Mail.Read consent becomes all-user consent,1,1,0,0,C07,True
+M07c,C07,all-user grant whose client service principal no longer exists,0,0,0,0,,True
 M08a,C08,Global Administrator to a service principal,1,1,0,0,C08,True
 M08b,C08,Cloud Application Administrator scoped to one app,1,1,0,0,C08,True
 M08c,C08,Security Reader (Microsoft labels it privileged),1,1,0,0,C08,True
@@ -34,10 +37,16 @@ M10a,C10,verified publisher removed,1,1,0,0,C10,True
 M10b,C10,unverified app gets all-user consent beyond sign-in,1,1,0,0,C10,True
 M11a,C11,dev app gains a production redirect URI,1,1,0,0,C11,True
 M11b,C11,second repository trusted by the same app,1,1,0,0,C11,True
-M12a,C12,workload policy switched to report-only,12,12,0,0,C12,True
+M12a,C12,workload policy switched to report-only,13,13,0,0,C12,True
 M12b,C12,one app excluded from the policy,1,1,0,0,C12,True
 M13a,C13,non-admin becomes owner of an app with Files.ReadWrite.All,2,2,0,0,C06 C13,True
 M13b,C13,non-admin becomes owner of a role-assignable admin group,3,3,0,0,C06 C13,True
 M13c,C13,app owned by a non-admin gets Application.ReadWrite.All (reaches every privileged app),5,5,0,0,C06 C13,True
+M13d,C13,app owned by a non-admin holds Cloud Application Administrator,3,3,0,0,C08 C13,True
+M13e,C13,app owned by a non-admin holds Cloud Application Administrator scoped to a privileged app,4,4,0,0,C06 C08 C13,True
+M13f,C13,privileged service principal owned by an app that has no permission to edit apps,1,1,0,0,C06,True
+M13g,C13,privileged service principal owned by a disabled app that could edit it,2,2,0,0,C06,True
+M13h,C13,owner holds a role that is not privileged (Directory Readers),2,2,0,0,C06 C13,True
 M14a,C14,service account signs in interactively,1,1,0,0,C14,True
+M14c,C14,interactive sign-in by a service account that has since been deleted,1,1,0,0,C14,True
 M14b,C14,automation account by naming pattern,1,1,0,0,C14,True

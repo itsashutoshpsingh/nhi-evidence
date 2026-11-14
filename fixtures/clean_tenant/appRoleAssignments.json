@@ -99,6 +99,17 @@
   "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
  },
  {
+  "id": "n0Wp06Y1iX1-EJvHXIdHDLZeFlVNIfLfuR9yZInYVS8=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "partner-sync",
+  "principalId": "56294b8b-7a9f-55ec-bb5b-ffd4142a51ee",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
   "id": "eoClILGV5Td3_b5KFiMjkH4VCdvQqGZv-UG8OEZ9wK8=",
   "appRoleId": "883ea226-0bf2-4a8f-9f9d-92c9162a727d",
   "createdDateTime": "2026-04-15T00:00:00Z",
@@ -149,6 +160,17 @@
   "deletedDateTime": null,
   "principalDisplayName": "retired-tool",
   "principalId": "fd4aefa9-f67d-5b82-b8b1-91c03a8967dc",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"
+ },
+ {
+  "id": "fDo5R4rnY0iOOVwzId8SNYfGxymySdEvSSsvlX52gPk=",
+  "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+  "createdDateTime": "2026-04-15T00:00:00Z",
+  "deletedDateTime": null,
+  "principalDisplayName": "quarterly-audit",
+  "principalId": "1cba00a5-a385-523d-8e28-0b8d0b09e208",
   "principalType": "ServicePrincipal",
   "resourceDisplayName": "Microsoft Graph",
   "resourceId": "fdf0c8d7-4fd7-591b-94bd-0819455607b5"

@@ -47,7 +47,7 @@ def rules(fic: dict, cfg: dict) -> list[tuple[str, str, str]]:
             out.append(("kubernetes_default_service_account", "medium",
                         "any pod running as the default service account in the default namespace"))
     for pat in SUB_MATCH.findall(expr or ""):
-        repo = pat.split(":")[1] if pat.startswith("repo:") and pat.count(":") >= 1 else pat
+        repo = pat.split(":")[1] if pat.startswith("repo:") else pat
         if any(ch in repo for ch in "*?"):
             out.append(("flexible_wildcard_repository", "high", f"wildcard repository in {pat!r}"))
         elif any(ch in pat for ch in "*?"):

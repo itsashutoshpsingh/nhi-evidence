@@ -480,6 +480,30 @@
   }
  },
  {
+  "id": "bQAqDSi_WFfGFKxS4pSKJQ5X4k6rlCbKrxP6nq1bqBA=",
+  "appId": "b0d49841-fa29-5383-99cd-8fc091ef1f9b",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "dcf93f18-3567-5501-9df4-2168f4ed0287"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "dcf93f18-3567-5501-9df4-2168f4ed0287"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
   "id": "x5a__s14GcI19pxpdNyW1CH4uT01akru5DcNw8Jo6Ds=",
   "appId": "8ecb38d6-cb91-5ffa-9232-202166f72559",
   "lastSignInActivity": {
@@ -696,6 +720,30 @@
   }
  },
  {
+  "id": "IJH82TRg9D8CinKp96dBHrSOA4loPka57xloK34yplQ=",
+  "appId": "e3f44ed0-3327-5f46-a0e8-ad2cca927755",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "63bf8529-59c6-5f5e-ac00-5162c6de9f94"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-10-29T00:00:00Z",
+   "lastSignInRequestId": "63bf8529-59c6-5f5e-ac00-5162c6de9f94"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
   "id": "VENhwJ2IoQ1B8VkQXCAnaRxSOMcAFstLWGPd-IG9MQY=",
   "appId": "e434cba4-a5f2-54c7-8068-d72632e81504",
   "lastSignInActivity": {
@@ -753,6 +801,30 @@
   "applicationAuthenticationClientSignInActivity": {
    "lastSignInDateTime": "2026-10-27T00:00:00Z",
    "lastSignInRequestId": "799bf73f-83ed-5ad3-a9a9-d242299ed7f7"
+  },
+  "applicationAuthenticationResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedClientSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  },
+  "delegatedResourceSignInActivity": {
+   "lastSignInDateTime": null,
+   "lastSignInRequestId": null
+  }
+ },
+ {
+  "id": "i9uiv2meLZMTpBT08Pxbz0b15wfUauot9I2cnk_T8gA=",
+  "appId": "906fd589-0d7d-5ab1-938d-2f565c0e9812",
+  "lastSignInActivity": {
+   "lastSignInDateTime": "2026-08-03T00:00:00Z",
+   "lastSignInRequestId": "4b2c2467-7b9d-5e2b-b34b-cb561cfcc2c5"
+  },
+  "applicationAuthenticationClientSignInActivity": {
+   "lastSignInDateTime": "2026-08-03T00:00:00Z",
+   "lastSignInRequestId": "4b2c2467-7b9d-5e2b-b34b-cb561cfcc2c5"
   },
   "applicationAuthenticationResourceSignInActivity": {
    "lastSignInDateTime": null,

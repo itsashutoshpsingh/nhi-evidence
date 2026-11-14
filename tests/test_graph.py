@@ -70,3 +70,29 @@ def test_group_owner_path_and_closing_control():
     assert d["source"] == "user Carol Clark" and d["steps"][0]["kind"] == "owns_group"
     assert "role-assignable group" in d["closing_control"]
     assert [s["to"] for s in d["steps"]][-2:] == ["every application", "sp doc-archiver"]
+
+
+def test_severity_by_hops():
+    from nhi_evidence import engine
+    from nhi_evidence.checks import c13_credential_paths
+    t = build({"S05"})
+    t.d["servicePrincipalOwners"][t.by_name["doc-archiver"]["id"]] = [t.ref(t.by_name["carol"])]  # 1 hop
+    t._access(t.by_name["teams-notifier"], ["Application.ReadWrite.All"], None, (), None)  # bob: 4 hops
+    t.d["servicePrincipalOwners"][t.by_name["teams-notifier"]["id"]] = [t.ref(t.by_name["frank"])]  # frank: 3
+    sev = {f.display_name: (f.severity, f.evidence["shortest_hops"])
+           for f in engine.evaluate(t.snapshot(), CFG, checks=[c13_credential_paths])}
+    assert sev["doc-archiver"] == ("critical", 1)
+    assert sev["teams-notifier"] == ("critical", 1)  # frank owns its service principal directly
+    t.d["servicePrincipalOwners"][t.by_name["doc-archiver"]["id"]] = []
+    sev = {f.display_name: (f.severity, f.evidence["shortest_hops"])
+           for f in engine.evaluate(t.snapshot(), CFG, checks=[c13_credential_paths])}
+    assert sev["doc-archiver"] == ("high", 3)  # frank -> teams-notifier sp -> every application -> doc-archiver
+
+
+def test_path_cap_keeps_count():
+    t = build({"S05"})
+    people = [t.user(f"p{i}", f"Person {i}") for i in range(12)]
+    t.d["applicationOwners"][t.by_name["app:doc-archiver"]["id"]] = [t.ref(p) for p in people]
+    snap = t.snapshot()
+    count, found = graph.paths(snap, CFG)[t.by_name["doc-archiver"]["id"]]
+    assert count == 12 and len(found) == 10
